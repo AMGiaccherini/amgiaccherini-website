@@ -18,3 +18,8 @@
 #p-sm-shown {display: none !important;}
 #p-sm-hidden {display: block !important;}
 .spacing-card-presentation{display: none !important;}
+
+/* ----- CAROUSEL ----- */
+#carousel h1{
+    font-size: 1.25rem;
+}
