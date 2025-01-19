@@ -1,12 +1,6 @@
-/* ----- JUMBOTRON CENTER INDEX ---- */
+/* ----- CARD PRESENTATION -----*/
+#card-md{display: none;}
 
-#spacing-center-home {display: none;}
-#jumbotron-row {margin-right: 0 !important;}
-#center-home-header {
-    text-align: center !important;
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-bottom: .5rem;
-}
-#jumbotron-center-home {padding: 0 !important;}
+/* ----- EXPERIENCE ----- */
+#carousel h1 {font-size: 1rem !important;}
 

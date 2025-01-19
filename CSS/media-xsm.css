@@ -1,15 +1,2 @@
-/* ----- JUMBOTRON CENTER INDEX ---- */
-
-#spacing-center-home {display: none;}
-#jumbotron-row {margin-right: 0 !important;}
-#center-home-header {
-    text-align: center !important;
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-bottom: .5rem;
-}
-#jumbotron-center-home {padding: 0 !important;}
-
-/* ----- EXPERIENCE ------ */
-#non-sm {display: none;}
-#sm {display: block !important;}
+/* ----- EXPERIENCE ----- */
+#carousel .row h1 {font-size: 0.8rem !important;}

@@ -1,6 +1,5 @@
 /* ----- EXPERIENCE ----- */
-
-#img-diploma {width: 500px;}
-#img-i-uni {width: 500px;}
-#img-f-uni {width: 500px;}
-#img-stew {width: 500px;}
+.experience-img {
+    width: 500px !important;
+    height: 100%;
+}
