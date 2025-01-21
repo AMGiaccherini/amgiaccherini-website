@@ -20,10 +20,6 @@
 #p-sm-hidden {display: block !important;}
 
 /* ----- EXPERIENCE ----- */
-#title {font-size: 2.5rem !important;}
-#carousel h1 {font-size: 1.75rem;}
+.carousel-text {font-size: 1.75rem;}
 #container-experience {padding: 1rem !important;}
 .spacing {display: none;}
-
-/* ----- WORKS ----- */
-#title {font-size: 2.5rem !important;}
