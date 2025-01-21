@@ -1,0 +1,29 @@
+/* ----- JUMBOTRON CENTER INDEX ---- */
+
+#center-home-header {
+    text-align: center !important;
+    font-size: 2.5rem;
+}
+#header {display: none;}
+#col-header {padding-right: 15px !important;}
+
+/* ----- CARD PRESENTATION -----*/
+
+#card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+}
+#card-xl{display: none;}
+#card-title {text-align: center !important;}
+#p-sm-shown {display: none;}
+#p-sm-hidden {display: block !important;}
+
+/* ----- EXPERIENCE ----- */
+#title {font-size: 2.5rem !important;}
+#carousel h1 {font-size: 1.75rem;}
+#container-experience {padding: 1rem !important;}
+.spacing {display: none;}
+
+/* ----- WORKS ----- */
+#title {font-size: 2.5rem !important;}
