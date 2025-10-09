@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rajdhani:wght@500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    background: var(--black);
+    overflow-x: hidden;
+}
+
+
+/* ============ DATA ============= */
+
+[data-usage="dark bg"] {
+    background-color: var(--black);
+}
+
+
+/* ============ NAV ============= */
+
+nav {
+    width: 100%; 
+    height: 100%; 
+    padding-left: 80px; 
+    padding-right: 80px; 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    background: var(--black); 
+    justify-content: space-between; 
+    align-items: center; 
+    display: flex;
+}
+
+.nav-container {
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 48px; 
+    display: flex;
+}
+
+.link {
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+}
+
+a {
+    color: var(--white); 
+    font-size: 20px; 
+    font-family: IBM Plex Mono, monospace; 
+    font-weight: 500; 
+    text-decoration: underline; 
+    word-wrap: break-word;
+}
+
+
+/* ============ HEADER ============= */
+
+header {
+    width: 864px; 
+    left: 80px; 
+    top: 384px; 
+    position: absolute; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 16px; 
+    display: inline-flex;
+}
+
+.header-container {
+    align-self: stretch; 
+    height: 109px; 
+    position: relative;
+}
+
+#shadow {
+    left: 51px; 
+    top: 57px; 
+    position: absolute; 
+    color: var(--accent);
+    font-size: 40px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.text-container {
+    left: 0px; 
+    top: 0px; 
+    position: absolute;
+}
+
+.header-text {
+    color: var(--white); 
+    font-size: 40px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+#subheader {
+    align-self: stretch; 
+    color: white; 
+    font-size: 20px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+
+/* ============ ABOUT ============= */
+
+#about {
+    left: 188px; 
+    top: 1093px; 
+    position: absolute; 
+    color: var(--white); 
+    font-size: 28px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.about-container {
+    width: 524px; 
+    left: 188px; 
+    top: 1153px; 
+    position: absolute;
+}
+
+.about-text {
+    color: var(--white); 
+    font-size: 20px; 
+    font-family: Rajdhani; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+
+/* ============ SKILLS ============= */
+
+#skills {
+    width: 580px; 
+    left: 188px; 
+    top: 1789px; 
+    position: absolute; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 24px; 
+    display: inline-flex;
+}
+
+#skills-title {
+    align-self: stretch; 
+    color: var(--white); 
+    font-size: 28px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+#skills-container {
+    align-self: stretch; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 16px; 
+    display: flex;
+}
+
+.skills-container {
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 4px; 
+    display: flex;
+}
+
+.skills-title {
+    color: var(--Andre-accent, #358E99); 
+    font-size: 20px; 
+    font-family: Rajdhani; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.skills-div {
+    padding-left: 22px; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: inline-flex;
+}
+
+.skills {
+    color: var(--Andre-white, #F3F3F3); 
+    font-size: 20px; 
+    font-family: Rajdhani; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+
+/* ============ STUDY ============= */
+
+.study-container {
+    position: absolute; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 8px; 
+    display: inline-flex;
+}
+
+.border {
+    min-width: 230px; 
+    padding-left: 16px; 
+    padding-right: 16px; 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    border-radius: 24px; 
+    outline: 1px var(--Andre-accent, #358E99) solid; 
+    outline-offset: -1px; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 16px; 
+    display: inline-flex;
+}
+
+.grey-tick {
+    width: 20px; 
+    height: 20px; 
+    position: relative; 
+    overflow: hidden;
+}
+
+.tick-container {
+    width: 20px; 
+    height: 20px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute;
+}
+
+.the-tick {
+    width: 17px; 
+    height: 15px; 
+    left: 1.50px; 
+    top: 2.50px; 
+    position: absolute; 
+    background: var(--accent);
+}
+
+.studied {
+    color: var(--Andre-accent, #358E99); 
+    font-size: 18px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.last-tick {
+    width: 20px; 
+    height: 0px; 
+    transform: rotate(90deg); 
+    transform-origin: top left; 
+    outline: 2px var(--accent) solid; 
+    outline-offset: -1px;
+}
+
+.dark-tick {
+    width: 20px; 
+    height: 0px; 
+    transform: rotate(90deg); 
+    transform-origin: top left; 
+    outline: 2px #0D1A1C solid; 
+    outline-offset: -1px;
+}
+
+#next {
+    color: #358E99; 
+    font-size: 18px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+
+/* ============ EXPERIMENTS ============= */
+
+#experiments {
+    left: 188px; 
+    top: 2419px; 
+    position: absolute; 
+    color: var(--white); 
+    font-size: 28px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+#exp-container {
+    width: 844px; 
+    left: 298px; 
+    top: 2487px; 
+    position: absolute; 
+    justify-content: space-between; 
+    align-items: center; 
+    display: inline-flex;
+}
+
+.exp-card {
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 12px; 
+    display: inline-flex;
+}
+
+.card {
+    width: 330px; 
+    height: 330px; 
+    background: #D9D9D9;
+}
+
+.card-text-container {
+    align-self: stretch; 
+    justify-content: space-between; 
+    align-items: center; 
+    display: inline-flex;
+}
+
+.card-text {
+    color: white; 
+    font-size: 16px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    word-wrap: break-word;
+}
+
+.card-link-container {
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+}
+
+.card-link {
+    color: var(--primary);
+    font-size: 14px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    text-decoration: underline; 
+    word-wrap: break-word;
+}
+
+
+/* ============ SOCIAL ============= */
+
+#social {
+    left: 188px; 
+    top: 3137px; 
+    position: absolute; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 24px; 
+    display: inline-flex;
+}
+
+.social-container {
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+}
+
+.social-link {
+    color: var(--accent); 
+    font-size: 20px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    text-decoration: underline; 
+    word-wrap: break-word;
+}
+
+
+/* ============ FOOTER ============= */
+
+#mysister {
+    left: 978px; 
+    top: 3142px; 
+    position: absolute; 
+    color: white; 
+    font-size: 12px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+
+/* ============ FIND OUT MORE ============= */
+
+#fom {
+    left: 635px; 
+    top: 834px; 
+    position: absolute; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 8px; 
+    display: inline-flex;
+}
+
+#fom-link {
+    color: var(--primary); 
+    font-size: 20px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+#fom-container {
+    width: 20px; 
+    height: 20px; 
+    position: relative;
+}
+
+#arrow  {
+    width: 20px; 
+    height: 20px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: var(--primary);
+}

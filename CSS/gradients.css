@@ -1,0 +1,84 @@
+/* ============ GRADIENTS ============= */
+
+#gradient1 {
+    width: 319.41px; 
+    height: 319.41px; 
+    left: 131.44px; 
+    top: 966px; 
+    position: absolute; 
+    transform: rotate(61deg); 
+    transform-origin: top left; 
+    opacity: 0.60; 
+    border-radius: 9999px;
+    background: linear-gradient(to bottom right, rgba(53, 142, 153, 0.70) 1%, rgba(45.85, 120.75, 130.01, 0.59) 13%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+                bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(53, 142, 153, 0.70) 1%, rgba(45.85, 120.75, 130.01, 0.59) 13%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+                bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(53, 142, 153, 0.70) 1%, rgba(45.85, 120.75, 130.01, 0.59) 13%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+                top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(53, 142, 153, 0.70) 1%, rgba(45.85, 120.75, 130.01, 0.59) 13%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+                top right / 50% 50% no-repeat; 
+}
+
+#gradient2 {
+    width: 725px; 
+    height: 726px; 
+    left: 757px; 
+    top: 78px; 
+    position: absolute; 
+    opacity: 0.70; 
+    border-radius: 9999px;
+    background: linear-gradient(to bottom right, rgba(207, 238, 76, 0.60) 0%, rgba(7.89, 7.89, 7.89, 0.30) 50%) 
+                bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(207, 238, 76, 0.60) 0%, rgba(7.89, 7.89, 7.89, 0.30) 50%) 
+                bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(207, 238, 76, 0.60) 0%, rgba(7.89, 7.89, 7.89, 0.30) 50%) 
+                top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(207, 238, 76, 0.60) 0%, rgba(7.89, 7.89, 7.89, 0.30) 50%) 
+                top right / 50% 50% no-repeat; 
+}
+
+#gradient3 {
+    width: 737.54px; 
+    height: 738.55px; 
+    left: 1011.15px; 
+    top: 1717px; 
+    position: absolute; 
+    transform: rotate(15deg); 
+    transform-origin: top left; 
+    opacity: 0.50; 
+    border-radius: 9999px;
+    background: linear-gradient(to bottom right, rgba(207, 238, 76, 0.50) 0%, rgba(7.89, 7.89, 7.89, 0.30) 50%) 
+                bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(207, 238, 76, 0.50) 0%, rgba(7.89, 7.89, 7.89, 0.30) 50%) 
+                bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(207, 238, 76, 0.50) 0%, rgba(7.89, 7.89, 7.89, 0.30) 50%) 
+                top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(207, 238, 76, 0.50) 0%, rgba(7.89, 7.89, 7.89, 0.30) 50%) 
+                top right / 50% 50% no-repeat;
+}
+
+#gradient4 {
+    width: 173.29px; 
+    height: 173.53px; 
+    left: 1432.93px; 
+    top: 2039.77px; 
+    position: absolute; 
+    transform: rotate(120deg); 
+    transform-origin: top left; 
+    opacity: 0.60; 
+    border-radius: 9999px;
+    background: linear-gradient(to bottom right, #CFEE4C 0%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+    bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #CFEE4C 0%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+    bottom left / 50% 50% no-repeat, linear-gradient(to top left, #CFEE4C 0%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+    top left / 50% 50% no-repeat, linear-gradient(to top right, #CFEE4C 0%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+    top right / 50% 50% no-repeat;
+}
+
+#gradient5 {
+    width: 725.73px; 
+    height: 725.73px; 
+    left: 966.77px; 
+    top: 146px; 
+    position: absolute; 
+    transform: rotate(45deg); 
+    transform-origin: top left; 
+    opacity: 0.60; 
+    border-radius: 9999px;
+    background: linear-gradient(to bottom right, rgba(53, 142, 153, 0.70) 1%, rgba(45.85, 120.75, 130.01, 0.59) 13%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+                bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(53, 142, 153, 0.70) 1%, rgba(45.85, 120.75, 130.01, 0.59) 13%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+                bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(53, 142, 153, 0.70) 1%, rgba(45.85, 120.75, 130.01, 0.59) 13%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+                top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(53, 142, 153, 0.70) 1%, rgba(45.85, 120.75, 130.01, 0.59) 13%, rgba(7.89, 7.89, 7.89, 0) 50%) 
+                top right / 50% 50% no-repeat;
+}
