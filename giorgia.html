@@ -12,15 +12,15 @@
     <body>
         <nav>
             <div class="nav-container">
-                <div data-state="Default" data-type="plain" data-usage="dark bg" class="link">
-                    <a>home</a>
+                <div class="link">
+                    <a class="page">home</a>
                 </div>
-                <div data-state="Default" data-type="plain" data-usage="dark bg" class="link">
-                    <a>experiments</a>
+                <div class="link">
+                    <a class="page">experiments</a>
                 </div>
             </div>
-            <div data-state="Default" data-type="plain" data-usage="dark bg" class="link">
-                <a style="color: var(--primary);">contacts</a>
+            <div class="link">
+                <a class="page" style="color: var(--primary);">contacts</a>
             </div>
         </nav>
         <header>
@@ -34,15 +34,69 @@
             </div>
             <span id="subheader">and in the meantime I’m building my own game :)</span>
         </header>
-        <span id="about">About me</span>
-        <div class="about-container">
-            <span class="about-text">I started programming so I could recreate </span>
-            <span class="about-text" style="color: var(--Andre-primary, #CFEE4C);">Minecraft</span>
-            <span class="about-text"> in Java. <br/>I enjoy programming and game development, and Minecraft was my </span>
-            <span class="about-text" style="color: var(--Andre-primary, #CFEE4C);">first love</span>
-            <span class="about-text">. <br/><br/>My passion for video games also gave me my competitive spirit, pushing me to constantly improve.<br/><br/>I studied Information technology and I learned on my own what schools didn’t teach me: editing videos, using Photoshop, building my own computer from scratch. Thank you </span>
-            <span class="about-text" style="color: var(--Andre-primary, #CFEE4C);">Youtube</span>
-            <span class="about-text"> <br/><br/>I’m Italian and I can easily work in english, but I’m also fluent in Java, C++, SQL and more :)</span>
+        <div id="gradient2"></div>
+        <div id="gradient5"></div>
+        <div id="fom">
+            <a id="fom-link">Find out more</a>
+            <div id="fom-container">
+                <div id="arrow"></div>
+            </div>
+        </div>
+        <div id="gradient1"></div>
+        <div id="middle-container">
+            <div id="about-container">
+                <span id="about">About me</span>
+                <div style="align-self: stretch">
+                    <span class="about-text">I started programming so I could recreate </span>
+                    <span class="about-text" style="color: var(--primary);">Minecraft</span>
+                    <span class="about-text"> in Java. <br/>I enjoy programming and game development, and Minecraft was my </span>
+                    <span class="about-text" style="color: var(--primary);">first love</span>
+                    <span class="about-text">. <br/><br/>My passion for video games also gave me my competitive spirit, pushing me to constantly improve.<br/><br/>I studied Information technology and I learned on my own what schools didn’t teach me: editing videos, using Photoshop, building my own computer from scratch. Thank you </span>
+                    <span class="about-text" style="color: var(--primary);">Youtube</span>
+                    <span class="about-text"> <br/><br/>I’m Italian and I can easily work in english, but I’m also fluent in Java, C++, SQL and more :)</span>
+                </div>
+            </div>
+            <div id="study">
+                <div class="study-container">
+                    <div class="border">
+                        <div class="hat-container">
+                            <div class="hat"></div>
+                            <div class="hat-img"></div>
+                        </div>
+                        <div class="study">ITIS Altiero Spinelli</div>
+                    </div>
+                    <div class="the-tick"></div>
+                </div>
+                <div class="study-container" style="align-self: stretch;">
+                    <div class="black-tick"></div>
+                    <div class="border">
+                        <div class="hat-container">
+                            <div class="hat"></div>
+                            <div class="hat-img"></div>
+                        </div>
+                        <div class="study">Davante cef - Unreal Engine</div>
+                    </div>
+                    <div class="the-tick"></div>
+                </div>
+                <div class="study-container">
+                    <div class="black-tick"></div>
+                    <div class="border">
+                        <div class="hat-container">
+                            <div class="hat"></div>
+                            <div class="hat-img"></div>
+                        </div>
+                        <div class="study">Udemy - Game development</div>
+                    </div>
+                    <div class="the-tick"></div>
+                </div>
+                <div class="study-container">
+                    <div class="black-tick"></div>
+                    <div class="border" style="outline: 1px var(--accent) dashed;">
+                        <div id="next">next?</div>
+                    </div>
+                    <div class="the-tick"></div>
+                </div>
+            </div>
         </div>
         <div id="skills">
             <span id="skills-title">Skills</span>
@@ -73,85 +127,41 @@
                 </div>
             </div>
         </div>
-        <div data-state="start" class="study-container" style="left: 896px; top: 1111px;">
-            <div class="border">
-                <div class="grey-tick">
-                    <div class="tick-container"></div>
-                    <div class="the-tick"></div>
-                </div>
-                <div class="studied">ITIS Altiero Spinelli</div>
-            </div>
-            <div class="last-tick"></div>
-        </div>
-        <div data-state="middle" class="study-container" style="left: 863px; top: 1194px;">
-            <div class="dark-tick"></div>
-            <div class="border">
-                <div class="grey-tick">
-                    <div class="tick-container"></div>
-                        <div class="the-tick"></div>
-                </div>
-                <div class="studied">Davante cef - Unreal Engine</div>
-            </div>
-            <div class="last-tick"></div>
-        </div>
-        <div data-state="middle" class="study-container" style="left: 885px; top: 1305px;">
-            <div class="dark-tick"></div>
-            <div class="border">
-                <div class="grey-tick">
-                    <div class="tick-container""></div>
-                    <div class="the-tick"></div>
-                </div>
-                <div class="studied">Udemy - Game development</div>
-            </div>
-            <div class="last-tick"></div>
-        </div>
-        <div data-state="next" class="study-container" style="left: 928px; top: 1416px;">
-            <div class="dark-tick"></div>
-            <div class="border">
-                <div id="next">next?</div>
-            </div>
-            <div class="last-tick"></div>
-        </div>
-        <span id="experiments">Experiments</span>
-        <div id="exp-container">
-            <div class="exp-card">
-                <div class="card"></div>
-                <div class="card-text-container">
-                    <span class="card-text">nome progetto</span>
-                    <div data-state="Default" data-type="plain" data-usage="dark bg" class="card-link-container">
-                        <a class="card-link">See more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="exp-card">
-                <div class="card"></div>
-                <div class="card-text-container">
-                    <span class="card-text">nome progetto</span>
-                    <div data-state="Default" data-type="plain" data-usage="dark bg" class="card-link-container">
-                        <a class="card-link">See more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="social">
-            <div data-state="Default" data-type="plain" data-usage="light bg" class="social-container">
-                <a class="social-link">Linkedin</a>
-            </div>
-            <div data-state="Default" data-type="plain" data-usage="light bg" class="social-container">
-                <a class="social-link">Github</a>
-            </div>
-        </div>
-        <span id="mysister">made with love by Giaccherini siblings</span>
-        <div id="gradient1"></div>
-        <div id="gradient2"></div>
         <div id="gradient3"></div>
         <div id="gradient4"></div>
-        <div id="gradient5"></div>
-        <div data-property-1="Default" id="fom">
-            <a id="fom-link">Find out more</a>
-            <div id="fom-container">
-                <div id="arrow"></div>
+        <div id="experiments">
+            <span id="experiments-title">Experiments</span>
+            <div id="exp-container">
+                <div class="exp-card">
+                    <div class="card"></div>
+                    <div class="card-text-container">
+                        <span class="card-text">nome progetto</span>
+                        <div data-state="Default" data-type="plain" data-usage="dark bg" class="card-link-container">
+                            <a class="card-link">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="card"></div>
+                    <div class="card-text-container">
+                        <span class="card-text">nome progetto</span>
+                        <div data-state="Default" data-type="plain" data-usage="dark bg" class="card-link-container">
+                            <a class="card-link">See more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div id="footer">
+            <div id="social">
+                <div class="social-container">
+                    <div class="social-link">Linkedin</div>
+                </div>
+                <div class="social-container">
+                    <div class="social-link">Github</div>
+                </div>
+            </div>
+            <div id="mysister">made with love by Giaccherini siblings</div>
+        </footer>
     </body>
 </html>

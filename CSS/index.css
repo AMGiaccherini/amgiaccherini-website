@@ -11,21 +11,19 @@ body {
     position: relative; 
     background: var(--black);
     overflow-x: hidden;
-}
-
-
-/* ============ DATA ============= */
-
-[data-usage="dark bg"] {
-    background-color: var(--black);
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 10px; 
+    display: inline-flex;
 }
 
 
 /* ============ NAV ============= */
 
 nav {
-    width: 100%; 
-    height: 100%; 
+    width: 1440px; 
+    height: 60px; 
     padding-left: 80px; 
     padding-right: 80px; 
     padding-top: 8px; 
@@ -33,7 +31,7 @@ nav {
     background: var(--black); 
     justify-content: space-between; 
     align-items: center; 
-    display: flex;
+    display: inline-flex;
 }
 
 .nav-container {
@@ -50,10 +48,10 @@ nav {
     display: flex;
 }
 
-a {
+.page {
     color: var(--white); 
     font-size: 20px; 
-    font-family: IBM Plex Mono, monospace; 
+    font-family: IBM Plex Mono; 
     font-weight: 500; 
     text-decoration: underline; 
     word-wrap: break-word;
@@ -63,15 +61,16 @@ a {
 /* ============ HEADER ============= */
 
 header {
-    width: 864px; 
-    left: 80px; 
-    top: 384px; 
-    position: absolute; 
+    width: 1440px; 
+    padding-left: 80px; 
+    padding-right: 80px; 
+    padding-top: 320px; 
+    padding-bottom: 320px; 
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: flex-start; 
     gap: 16px; 
-    display: inline-flex;
+    display: flex;
 }
 
 .header-container {
@@ -117,22 +116,34 @@ header {
 
 /* ============ ABOUT ============= */
 
+#middle-container {
+    align-self: stretch; 
+    padding-left: 188px; 
+    padding-right: 188px; 
+    padding-top: 160px; 
+    padding-bottom: 160px; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 181px; 
+    display: inline-flex;
+}
+
+#about-container {
+    width: 524px; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 24px; 
+    display: inline-flex;
+}
+
 #about {
-    left: 188px; 
-    top: 1093px; 
-    position: absolute; 
+    align-self: stretch; 
     color: var(--white); 
     font-size: 28px; 
     font-family: IBM Plex Mono; 
     font-weight: 500; 
     word-wrap: break-word;
-}
-
-.about-container {
-    width: 524px; 
-    left: 188px; 
-    top: 1153px; 
-    position: absolute;
 }
 
 .about-text {
@@ -143,19 +154,19 @@ header {
     word-wrap: break-word;
 }
 
-
 /* ============ SKILLS ============= */
 
 #skills {
-    width: 580px; 
-    left: 188px; 
-    top: 1789px; 
-    position: absolute; 
+    align-self: stretch; 
+    padding-left: 188px; 
+    padding-right: 188px; 
+    padding-top: 160px; 
+    padding-bottom: 160px; 
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: flex-start; 
     gap: 24px; 
-    display: inline-flex;
+    display: flex;
 }
 
 #skills-title {
@@ -185,7 +196,7 @@ header {
 }
 
 .skills-title {
-    color: var(--Andre-accent, #358E99); 
+    color: var(--accent); 
     font-size: 20px; 
     font-family: Rajdhani; 
     font-weight: 500; 
@@ -194,14 +205,14 @@ header {
 
 .skills-div {
     padding-left: 22px; 
-    justify-content: center; 
+    justify-content: flex-start; 
     align-items: center; 
     gap: 10px; 
     display: inline-flex;
 }
 
 .skills {
-    color: var(--Andre-white, #F3F3F3); 
+    color: var(--white); 
     font-size: 20px; 
     font-family: Rajdhani; 
     font-weight: 500; 
@@ -211,13 +222,21 @@ header {
 
 /* ============ STUDY ============= */
 
+#study {
+    width: 360px; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 16px; 
+    display: inline-flex;
+}
+
 .study-container {
-    position: absolute; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
     gap: 8px; 
-    display: inline-flex;
+    display: flex
 }
 
 .border {
@@ -227,7 +246,7 @@ header {
     padding-top: 8px; 
     padding-bottom: 8px; 
     border-radius: 24px; 
-    outline: 1px var(--Andre-accent, #358E99) solid; 
+    outline: 1px var(--accent) solid; 
     outline-offset: -1px; 
     justify-content: center; 
     align-items: center; 
@@ -235,14 +254,14 @@ header {
     display: inline-flex;
 }
 
-.grey-tick {
+.hat-container {
     width: 20px; 
     height: 20px; 
     position: relative; 
     overflow: hidden;
 }
 
-.tick-container {
+.hat {
     width: 20px; 
     height: 20px; 
     left: 0px; 
@@ -250,7 +269,7 @@ header {
     position: absolute;
 }
 
-.the-tick {
+.hat-img {
     width: 17px; 
     height: 15px; 
     left: 1.50px; 
@@ -259,15 +278,15 @@ header {
     background: var(--accent);
 }
 
-.studied {
-    color: var(--Andre-accent, #358E99); 
+.study {
+    color: var(--accent); 
     font-size: 18px; 
     font-family: IBM Plex Mono; 
     font-weight: 500; 
     word-wrap: break-word;
 }
 
-.last-tick {
+.the-tick {
     width: 20px; 
     height: 0px; 
     transform: rotate(90deg); 
@@ -276,7 +295,7 @@ header {
     outline-offset: -1px;
 }
 
-.dark-tick {
+.black-tick {
     width: 20px; 
     height: 0px; 
     transform: rotate(90deg); 
@@ -297,9 +316,17 @@ header {
 /* ============ EXPERIMENTS ============= */
 
 #experiments {
-    left: 188px; 
-    top: 2419px; 
-    position: absolute; 
+    padding-top: 120px; 
+    padding-bottom: 120px; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 32px; 
+    display: flex;
+}
+
+#experiments-title {
+    align-self: stretch; 
     color: var(--white); 
     font-size: 28px; 
     font-family: IBM Plex Mono; 
@@ -308,10 +335,9 @@ header {
 }
 
 #exp-container {
-    width: 844px; 
-    left: 298px; 
-    top: 2487px; 
-    position: absolute; 
+    width: 1064px; 
+    padding-left: 108px; 
+    padding-right: 108px; 
     justify-content: space-between; 
     align-items: center; 
     display: inline-flex;
@@ -326,8 +352,8 @@ header {
 }
 
 .card {
-    width: 330px; 
-    height: 330px; 
+    width: 306px; 
+    height: 306px; 
     background: #D9D9D9;
 }
 
@@ -364,16 +390,24 @@ header {
 }
 
 
-/* ============ SOCIAL ============= */
+/* ============ FOOTER ============= */
+
+#footer {
+    align-self: stretch; 
+    padding-top: 80px; 
+    padding-bottom: 40px; 
+    padding-left: 188px; 
+    padding-right: 188px; 
+    justify-content: space-between; 
+    align-items: center; 
+    display: inline-flex;
+}
 
 #social {
-    left: 188px; 
-    top: 3137px; 
-    position: absolute; 
-    justify-content: flex-start; 
+    justify-content: center; 
     align-items: center; 
     gap: 24px; 
-    display: inline-flex;
+    display: flex;
 }
 
 .social-container {
@@ -392,13 +426,7 @@ header {
     word-wrap: break-word;
 }
 
-
-/* ============ FOOTER ============= */
-
 #mysister {
-    left: 978px; 
-    top: 3142px; 
-    position: absolute; 
     color: white; 
     font-size: 12px; 
     font-family: IBM Plex Mono; 
@@ -410,9 +438,6 @@ header {
 /* ============ FIND OUT MORE ============= */
 
 #fom {
-    left: 635px; 
-    top: 834px; 
-    position: absolute; 
     justify-content: center; 
     align-items: center; 
     gap: 8px; 
