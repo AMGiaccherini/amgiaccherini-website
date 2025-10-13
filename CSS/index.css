@@ -275,6 +275,7 @@ header {
     left: 1.50px; 
     top: 2.50px; 
     position: absolute; 
+    background: var(--accent);
     mask: url("../img/svg/School.svg") no-repeat center;
     mask-size: contain;
 }
