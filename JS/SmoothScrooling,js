@@ -22,10 +22,3 @@ function smoothScroll(target, duration) {
 
             requestAnimationFrame(animation);
         }
-
-        var experienceLink = document.querySelector('a[href="#exp-container"]');
-        
-
-        experienceLink.addEventListener('click', function() {
-            smoothScroll('#exp-container', 1000);
-        });

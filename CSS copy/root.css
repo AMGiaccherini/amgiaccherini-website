@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rajdhani:wght@500&display=swap');
+
+:root {
+    --primary: #CFEE4C;
+    --black: #080808;
+    --white: #F3F3F3;
+    --accent: #358E99;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+        width: 100%;
+        background-color: var(--black);
+        overflow-x: hidden;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: center;
+    }
+
+a, button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a {
+    display: inline-flex;
+    position: relative;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+a:hover::after {
+        width: 100%;
+    }
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
