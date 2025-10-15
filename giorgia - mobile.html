@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../CSS copy/small-device/index.css">
-        <link rel="stylesheet" href="../CSS copy/medium-device/index.css">
-        <link rel="stylesheet" href="../CSS copy/big-device/index.css">
-        <link rel="stylesheet" href="../CSS copy/root.css">
+        <link rel="stylesheet" href="../CSS/small-device/index.css">
+        <link rel="stylesheet" href="../CSS/medium-device/index.css">
+        <link rel="stylesheet" href="../CSS/big-device/index.css">
+        <link rel="stylesheet" href="../CSS/root.css">
         <title>Giorgia - mobile normale</title>
     </head>
     <body>
@@ -36,31 +36,32 @@
             
             <!--  ========================      HEADER      ========================  -->
 
-            <header>
-                <div id="title-header">
-                    <div id="title-shadow">Junior developer</div>
-                    <div id="title-container">
-                        <span class="title-text">Hi, I’m Andrea<br/>a </span>
-                        <span class="title-text" style="color: var(--primary);">Junior developer <br></span>
-                        <span class="title-text"> looking for a job</span>
+            <section style="display: flex; flex-direction: column; height: 100vh;">
+                <header>
+                    <div id="title-header">
+                        <div id="title-shadow">Junior developer</div>
+                        <div id="title-container">
+                            <span class="title-text">Hi, I’m Andrea<br/>a </span>
+                            <span class="title-text" style="color: var(--primary);">Junior developer <br></span>
+                            <span class="title-text"> looking for a job</span>
+                        </div>
                     </div>
-                </div>
-                <span id="subtitle">and in the meantime I’m building my own game :)</span>
-            </header>
+                    <span id="subtitle">and in the meantime I’m building my own game :)</span>
+                </header>
 
             <!--  ========================      FOM      ========================  -->
 
-            <div id="fom">
-                <button id="fom-button" onclick="smoothScroll('#exp-title', 1500)">
-                    <span id="fom-text">Find out more</span>
-                    <div id="arrow-container">
-                        <svg id="arrow" view-box="0 0 20 20">
-                            <path style="transition: all 0.3s ease" d="M20 10L18.2375 8.2375L11.25 15.2125V0H8.75V15.2125L1.775 8.225L0 10L10 20L20 10Z" fill="var(--primary)"/>
-                        </svg>
-                    </div>
-                </button>
-            </div>
-
+                <div id="fom">
+                    <button id="fom-button" onclick="smoothScroll('#exp-title', 1500)">
+                        <span id="fom-text">Find out more</span>
+                        <div id="arrow-container">
+                            <svg id="arrow" view-box="0 0 20 20">
+                                <path style="transition: all 0.3s ease" d="M20 10L18.2375 8.2375L11.25 15.2125V0H8.75V15.2125L1.775 8.225L0 10L10 20L20 10Z" fill="var(--primary)"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </section>
             <!--  ========================      ABOUT      ========================  -->
 
             <div id="about">
