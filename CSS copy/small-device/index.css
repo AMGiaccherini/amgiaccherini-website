@@ -27,11 +27,13 @@
         align-items: center; 
         display: none;
         pointer-events: none;
+        overflow: auto;
     }
 
     #menu.active {
         pointer-events: auto;
         display: inline-flex;
+        overflow: hidden;
     }
 
     #overlay {
