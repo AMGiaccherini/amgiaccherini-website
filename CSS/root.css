@@ -4,3 +4,19 @@
     --white: #F3F3F3;
     --accent: #358E99;
 }
+
+a:hover ,  .button:hover {
+    cursor: pointer;
+}
+
+a.page:hover, a.social-link:hover {
+    background-color: var(--accent);
+    color: var(--black);
+    transition: all 0.25s ease-in-out;
+}
+
+a.page[id="contact"]:hover, a.card-link:hover {
+    background-color: var(--primary);
+    color: var(--black) !important;
+    transition: all 0.25s ease-in-out;
+}

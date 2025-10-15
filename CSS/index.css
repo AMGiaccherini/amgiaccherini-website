@@ -50,11 +50,13 @@ nav {
 
 .page {
     color: var(--white); 
+    padding: 4px 8px;
     font-size: 20px; 
     font-family: IBM Plex Mono; 
     font-weight: 500; 
     text-decoration: underline; 
     word-wrap: break-word;
+    border-radius: 4px;
 }
 
 
@@ -196,11 +198,14 @@ header {
 }
 
 .skills-title {
-    color: var(--accent); 
+    color: var(--black); 
+    background-color: var(--accent);
     font-size: 20px; 
-    font-family: Rajdhani; 
+    font-family: IBM Plex Mono; 
     font-weight: 500; 
     word-wrap: break-word;
+    border-radius: 4px;
+    padding: 4px 8px;
 }
 
 .skills-div {
@@ -275,9 +280,6 @@ header {
     left: 1.50px; 
     top: 2.50px; 
     position: absolute; 
-    background: var(--accent);
-    mask: url("../img/svg/School.svg") no-repeat center;
-    mask-size: contain;
 }
 
 .study {
@@ -389,6 +391,8 @@ header {
     font-weight: 500; 
     text-decoration: underline; 
     word-wrap: break-word;
+    border-radius: 4px;
+    padding: 4px 8px;
 }
 
 
@@ -422,10 +426,12 @@ footer {
 .social-link {
     color: var(--accent); 
     font-size: 20px; 
+    padding: 4px 8px;
     font-family: IBM Plex Mono; 
     font-weight: 500; 
     text-decoration: underline; 
     word-wrap: break-word;
+    border-radius: 4px;
 }
 
 #mysister {
@@ -444,6 +450,7 @@ footer {
     align-items: center; 
     gap: 8px; 
     display: inline-flex;
+    
 }
 
 #fom-link {
@@ -452,6 +459,7 @@ footer {
     font-family: IBM Plex Mono; 
     font-weight: 500; 
     word-wrap: break-word;
+    text-decoration: underline;
 }
 
 #fom-container {
@@ -466,5 +474,5 @@ footer {
     left: 0px; 
     top: 0px; 
     position: absolute; 
-    background: var(--primary);
+    
 }

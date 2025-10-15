@@ -4,9 +4,9 @@
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="../img/website-icon/icon.webp">
-        <link rel="stylesheet" href="CSS/index.css">
-        <link rel="stylesheet" href="CSS/root.css">
-        <link rel="stylesheet" href="CSS/gradients.css">
+        <link rel="stylesheet" href="../amgiaccherini-website/CSS/index.css">
+        <link rel="stylesheet" href="../amgiaccherini-website/CSS/root.css">
+        <link rel="stylesheet" href="../amgiaccherini-website/CSS/gradients.css">
         <title>Home</title>
     </head>
     <body>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="link">
-                <a class="page" style="color: var(--primary);">contacts</a>
+                <a id="contact" class="page" style="color: var(--primary);">contacts</a>
             </div>
         </nav>
 
@@ -52,10 +52,10 @@
 
         <!--  ==================    FOM    ==================  -->
 
-        <div id="fom">
-            <a id="fom-link">Find out more</a>
+        <div id="fom" class="button" >
+            <a id="fom-link" class="text-link" href="#exp-container">Find out more</a>
             <div id="fom-container">
-                <svg id="arrow" src="img/svg/arrow down.svg" ></svg>
+                <img id="arrow" src="img/svg/arrow down.svg" ></img>
             </div>
         </div>
 
@@ -85,7 +85,7 @@
                     <div class="border">
                         <div class="hat-container">
                             <div class="hat"></div>
-                            <svg class="hat-img" src="img/svg/School.svg"></svg>
+                            <img src="../amgiaccherini-website/img/svg/School.svg" class="hat-img"></img>
                         </div>
                         <div class="study">ITIS Altiero Spinelli</div>
                     </div>
@@ -96,7 +96,7 @@
                     <div class="border">
                         <div class="hat-container">
                             <div class="hat"></div>
-                            <svg class="hat-img" src="img/svg/School.svg"></svg>
+                            <img src="../amgiaccherini-website/img/svg/School.svg" class="hat-img"></img>
                         </div>
                         <div class="study">Davante cef - Unreal Engine</div>
                     </div>
@@ -107,7 +107,7 @@
                     <div class="border">
                         <div class="hat-container">
                             <div class="hat"></div>
-                            <div class="hat-img"></div>
+                            <img src="../amgiaccherini-website/img/svg/School.svg" class="hat-img"></img>
                         </div>
                         <div class="study">Udemy - Game development</div>
                     </div>
@@ -129,26 +129,26 @@
         <div id="skills">
             <span id="skills-title">Skills</span>
             <div id="skills-container">
-                <div class="skills-container" style="width: 511px;">
-                    <div class="skills-title" style="align-self: stretch;">// programming languages</div>
+                <div class="skills-container"  >
+                    <div class="skills-title">programming languages</div>
                     <div class="skills-div" style="justify-content: flex-start;">
                         <span class="skills">JAVA -- PHP -- CSS -- HTML -- JS -- SQL -- C++</span>
                     </div>
                 </div>
                 <div class="skills-container">
-                    <div class="skills-title">// other knowledge</div>
+                    <div class="skills-title">other knowledge</div>
                     <div class="skills-div">
-                        <span class="skills" style="text-align: center;">PC assembly -- Unity -- Blender -- Photoshop -- Editing video -- Prompting</span>
+                        <span class="skills" style="text-align: center;">PC assembly -- Unreal Engine -- Blender -- Photoshop -- Editing video -- Prompting</span>
                     </div>
                 </div>
                 <div class="skills-container" style="align-self: stretch;">
-                    <div class="skills-title">// soft skills</div>
+                    <div class="skills-title">soft skills</div>
                     <div class="skills-div">
                         <span class="skills" style="text-align: center;">team work -- determined -- fast learner -- non-verbal communication</span>
                     </div>
                 </div>
                 <div class="skills-container">
-                    <div class="skills-title">// languages</div>
+                    <div class="skills-title">languages</div>
                     <div class="skills-div">
                         <span class="skills">Italian, Native speaker -- English, B2</span>
                     </div>
@@ -195,15 +195,14 @@
         <footer>
             <div id="social">
                 <div class="social-container">
-                    <div class="social-link">Linkedin</div>
+                    <a class="social-link">Linkedin</a>
                 </div>
                 <div class="social-container">
-                    <div class="social-link">Github</div>
+                    <a class="social-link">Github</a>
                 </div>
             </div>
             <div id="mysister">made with love by Giaccherini siblings</div>
         </footer>
-
-        
     </body>
+    <script type="text/javascript" src="../amgiaccherini-website/JS/SmoothScrooling,js"></script>
 </html>
