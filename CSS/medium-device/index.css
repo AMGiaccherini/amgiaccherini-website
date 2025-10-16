@@ -1,14 +1,26 @@
 @media only screen and (min-width: 768px) {
     
-    #mobile {
-        display: none;
+    #mobile {display: none;}
+
+    #medium {display: inline-flex;}
+
+    #fom {bottom: 90px;}
+
+    header {
+        padding-top: 240px;
+        padding-bottom: 320px;
+        padding-left: 40px;
+        padding-right: 40px;
+        gap: 48px;
     }
 
-    #medium {
-        display: inline-flex;
+    #title-shadow {
+        left: 44px;
+        top: 48px;
+        font-size: 35px;
     }
 
-    #fom {
-        bottom: 90px;
-    }
+    .title-text {font-size: 35px;}
+
+    #subtitle {font-size: 20px;}
 }
