@@ -205,14 +205,14 @@ header {
 
 #fom {
     bottom: 60px;
-    left: 50%;
+    left: 0;
     padding-top: 24px;
     padding-bottom: 24px;
-    transform: translateX(-50%);
+    right: 0;
     justify-content: center; 
     align-items: center; 
     display: inline-flex;
-    position: absolute;
+    position: sticky;
 }
 
 #fom-button {
@@ -325,8 +325,7 @@ header {
     padding-bottom: 8px;
     padding-bottom: 8px; 
     border-radius: 24px; 
-    outline: 1px var(--accent) solid; 
-    outline-offset: -1px; 
+    border: 1px var(--accent) solid; 
     justify-content: center; 
     align-items: center; 
     gap: 8px; 
@@ -342,19 +341,19 @@ header {
 }
 
 .hat {
-width: 12px; 
-height: 12px; 
-left: 1.20px; 
-top: 2px; 
-position: absolute; 
+    width: 12px; 
+    height: 12px; 
+    left: 1.20px; 
+    top: 2px; 
+    position: absolute; 
 }
 
 .study-text {
-color: var(--accent); 
-font-size: 16px; 
-font-family: IBM Plex Mono; 
-font-weight: 500; 
-word-wrap: break-word;
+    color: var(--accent); 
+    font-size: 16px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
 }
 
 .black-tick {
