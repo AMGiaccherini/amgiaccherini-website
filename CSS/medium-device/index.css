@@ -8,7 +8,7 @@
         display: inline-flex;
     }
 
-    #fom {
-        bottom: 90px;
+    section {
+        padding-bottom: 120px;
     }
 }
