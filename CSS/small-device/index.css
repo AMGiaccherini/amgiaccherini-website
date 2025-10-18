@@ -141,14 +141,14 @@ section {
     display: flex; 
     flex-direction: column; 
     justify-content: space-between;
-    height: 100vh;
+    height: 100svh;
 }
 
 header {
     position: relative;
-    align-self: stretch; 
-    padding-top: 45%; 
-    padding-bottom: 350px; 
+    align-self: stretch;
+    padding-top: 35%; 
+    padding-bottom: 35%; 
     padding-left: 18px; 
     padding-right: 18px; 
     flex-direction: column; 
@@ -202,15 +202,11 @@ header {
 /* ===============  FOM  =============== */
 
 #fom {
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 60px;
     justify-content: center; 
     align-items: center; 
     display: inline-flex;
-    position: absolute;
+    position: relative;
 }
 
 #fom-button {

@@ -4,23 +4,5 @@
 
     #medium {display: inline-flex;}
 
-    #fom {bottom: 90px;}
-
-    header {
-        padding-top: 15%;
-        padding-bottom: 20%;
-        padding-left: 40px;
-        padding-right: 40px;
-        gap: 48px;
-    }
-
-    #title-shadow {
-        left: 44px;
-        top: 48px;
-        font-size: 35px;
-    }
-
-    .title-text {font-size: 35px;}
-
-    #subtitle {font-size: 20px;}
+    #fom {padding-bottom: 120px;}
 }
