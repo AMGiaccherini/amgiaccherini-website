@@ -229,16 +229,12 @@ header {
     transition: all 0.3s ease;
 }
 
-#arrow-container {
-    width: 20px; 
-    height: 20px; 
-    position: relative;
-}
-
 #arrow {
     width: 20px; 
     height: 20px;
     fill: none;
+    shape-rendering: geometricPrecision;
+    vector-effect: non-scaling-stroke;
 }
 
 #fom-button:hover #fom-text, #fom-button:hover #arrow path {

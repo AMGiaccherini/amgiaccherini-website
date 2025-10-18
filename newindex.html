@@ -75,11 +75,9 @@
                 <div id="fom">
                     <button id="fom-button" onclick="smoothScroll('#exp-title', 1500)">
                         <span id="fom-text">Find out more</span>
-                        <div id="arrow-container">
-                            <svg id="arrow" view-box="0 0 20 20">
-                                <path style="transition: all 0.3s ease" d="M20 10L18.2375 8.2375L11.25 15.2125V0H8.75V15.2125L1.775 8.225L0 10L10 20L20 10Z" fill="var(--primary)"/>
-                            </svg>
-                        </div>
+                        <svg viewBox="-4 -4 28 28" fill="none" id="arrow">
+                            <path d="m20 10 -1.762 -1.762L11.25 15.212V0h-2.5v15.212L1.774 8.224 0 10l10 10z" fill="#CFEE4C"></path>
+                        </svg>
                     </button>
                 </div>
             </section>
@@ -213,4 +211,5 @@
     </body>
     <script type="text/javascript" src="../JS/Menu.js"></script>
     <script type="text/javascript" src="../JS/SmoothScrooling,js"></script>
+    <script type="text/javascript" src="../JS/ResizeSvg.js"></script>
 </html>

@@ -1,8 +1,24 @@
 @media only screen and (min-width: 768px) {
     
     #mobile {display: none;}
-
     #medium {display: inline-flex;}
 
+    header {
+        padding: 25% 36px;
+        gap: 48px;
+    }
+    
+    #title-shadow {
+        font-size: 40px;
+        left: 51px;
+        top: 54px;
+    }
+
+    #title-header {height: 150px;}
+    .title-text {font-size: 40px;}
+    #subtitle {font-size: 20px;}
+
     #fom {padding-bottom: 120px;}
+    #fom-text{font-size: 24px;}
+    #arrow {width: 28px; height: 28px;}
 }
