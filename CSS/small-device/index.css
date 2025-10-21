@@ -398,13 +398,8 @@ header {
     display: flex;
 }
 
-.skills-section-title {
-    align-self: stretch; 
-    color: var(--accent); 
-    font-size: 14px; 
-    font-family: Rajdhani; 
-    font-weight: 500; 
-    word-wrap: break-word;
+.skills-section > .common-text {
+    color: var(--accent);
 }
 
 .skills-text-container {
