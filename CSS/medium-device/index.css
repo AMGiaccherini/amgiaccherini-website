@@ -30,12 +30,9 @@
     #about-title, #skills-title, #exp-title{font-size: 36px;}
     
 
-    #exp-container {
+    #exp-container , footer {
         flex-direction: row;
         justify-content: space-between;
     }
     .exp-section{width: 100%;}
-
-    #s-mobile{display: none;}
-    #s-medium{display: inline;}
 }
