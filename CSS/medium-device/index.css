@@ -21,4 +21,20 @@
     #fom {padding-bottom: 120px;}
     #fom-text{font-size: 24px;}
     #arrow {width: 28px; height: 28px;}
+
+    #experiments, #skills, #about {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    #about-title, #skills-title, #exp-title{font-size: 36px;}
+    .common.text, .skills-section-title{font-size: 16px;}
+
+    #exp-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .exp-section{width: 100%;}
+
+    #s-mobile{display: none;}
+    #s-medium{display: inline;}
 }
