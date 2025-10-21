@@ -1,49 +1,39 @@
-var mobileDevice, mediumDevice, mediumBigDevice, bigDevice;
-
-const deviceSize = [mobileDevice, mediumDevice, mediumBigDevice, bigDevice];
-
 const arrow = document.getElementById('arrow');
-
+const hat = [];
 
 window.addEventListener('load' , () => {
-    mobileDevice = window.innerWidth < 768 ? 1 : 0;
-    mediumDevice = window.innerWidth >= 768 ? 1 : 0;
-    mediumBigDevice = window.innerWidth >= 1024 ? 1 : 0;
-    bigDevice = window.innerWidth >= 1440 ? 1 : 0;
 
-    
-    console.log(mobileDevice+', '+mediumDevice+', '+mediumBigDevice+', '+bigDevice);
+    var width = window.innerWidth;
 
-    if(mobileDevice) {
-        console.log('mobile');
-        arrow.setAttribute('viewBox', '-4 -4 28 28');
-    } else if(mediumDevice) {
-        console.log('medium');
-        arrow.setAttribute('viewBox', '-4 -6 28 28');
+    document.querySelectorAll('.hat').item
+
+    for(var i = 0; i < document.querySelectorAll('.hat').length; i++) {
+        hat[i] = document.querySelectorAll('.hat').item(i);
+        console.log(hat[i]);
     }
 
-    console.log('fuori switch');
+    if(width < 768) {
+        arrow.setAttribute('viewBox', '-4 -4 28 28');
+        hat.forEach(hats => {
+            hats.setAttribute('viewBox', '0 0 21 21');
+        });
+    } else if (width >= 780) {
+        arrow.setAttribute('viewBox', '-4 -6 28 28');
+    }
 })
 
 window.addEventListener('resize', () => {
 
-    mobileDevice = window.innerWidth < 768 ? 1 : 0;
-    mediumDevice = window.innerWidth >= 768 ? 1 : 0;
-    mediumBigDevice = window.innerWidth >= 1024 ? 1 : 0;
-    bigDevice = window.innerWidth >= 1440 ? 1 : 0;
+   var width = window.innerWidth;
 
-    
-    console.log(mobileDevice+', '+mediumDevice+', '+mediumBigDevice+', '+bigDevice);
-
-    if(mobileDevice) {
-        console.log('mobile');
+    if(width < 768) {
         arrow.setAttribute('viewBox', '-4 -4 28 28');
-    } else if(mediumDevice) {
-        console.log('medium');
+        hat.forEach(hats => {
+            hats.setAttribute('viewBox', '0 0 21 21');
+        });
+    } else if(width >= 780) {
         arrow.setAttribute('viewBox', '-4 -6 28 28');
     }
-
-    console.log('fuori switch');
 })
 
 
