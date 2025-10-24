@@ -4,7 +4,7 @@
     #medium {display: inline-flex;}
 
     header {
-        padding: 25% 36px;
+        padding: 20% 36px;
         gap: 48px;
     }
     
@@ -29,10 +29,17 @@
     .common-text{font-size: 18px;}
     #about-title, #skills-title, #exp-title{font-size: 36px;}
     
-
+    #exp-container {padding-bottom: 180px;}
     #exp-container , footer {
         flex-direction: row;
         justify-content: space-between;
     }
     .exp-section{width: 100%;}
+}
+
+@media only screen and (min-width: 1024px) {
+
+    header {padding: 12.5% 36px;}
+    
+    footer {padding: 40px 54px;}
 }
