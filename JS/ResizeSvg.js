@@ -9,7 +9,6 @@ window.addEventListener('load' , () => {
 
     for(var i = 0; i < document.querySelectorAll('.hat').length; i++) {
         hat[i] = document.querySelectorAll('.hat').item(i);
-        console.log(hat[i]);
     }
 
     if(width < 768) {

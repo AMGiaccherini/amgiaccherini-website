@@ -1,20 +1,14 @@
 const hamburger = document.getElementById('hamburger');
-const menu = document.querySelector('#menu');
+const menu = document.getElementById('menu');
 const body = document.querySelector('body');
+const animation = document.getElementById('nav-icon3');
+
+var shown = true;
 
 hamburger.addEventListener('click', () => {
 
     menu.classList.toggle('active');
-
-    document.getElementById('nav-icon3').classList.toggle('open');
-
-    if (body.style.overflow == "") {
-        body.style.overflow = "hidden";
-        body.style.overscrollBehavior = "none";
-    } else {
-        body.style.overflow = "";
-        body.style.overscrollBehavior = "";
-    }
-
-
+    animation.classList.toggle('open');
+    console.log(body.style.overflowY = (shown)?"hidden":"auto");
+    shown=!shown;
 });
