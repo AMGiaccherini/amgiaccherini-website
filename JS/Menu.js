@@ -9,6 +9,7 @@ hamburger.addEventListener('click', () => {
 
     menu.classList.toggle('active');
     animation.classList.toggle('open');
-    console.log(body.style.overflowY = (shown)?"hidden":"auto");
+    body.style.overflowY = (shown)?"hidden":"auto";
+    body.style.overscrollBehaviorY = (shown)?"none":"";
     shown=!shown;
 });
