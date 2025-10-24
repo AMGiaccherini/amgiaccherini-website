@@ -16,7 +16,6 @@ hamburger.addEventListener('click', () => {
         body.style.position = 'fixed';
         body.style.top = `-${scrollY}px`;
         body.style.width = '100%';
-        body
     } else {
         body.style.position = '';
         body.style.top = '';
