@@ -254,10 +254,7 @@ header {
 
 #about {
     align-self: stretch; 
-    padding-top: 105px; 
-    padding-bottom: 120px; 
-    padding-left: 24px; 
-    padding-right: 24px; 
+    padding: 105px 24px;
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: flex-start; 
@@ -278,7 +275,7 @@ header {
 
 .common-text {
     color: var(--white); 
-    font-size: 14px; 
+    font-size: 15px; 
     font-family: Rajdhani; 
     font-weight: 500; 
     word-wrap: break-word;
