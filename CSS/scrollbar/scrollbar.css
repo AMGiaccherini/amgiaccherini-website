@@ -1,9 +1,9 @@
 ::-webkit-scrollbar {
     background-color: transparent;
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--gray);
-    border-radius: 5px;
+    background-color: var(--accent);
+    border-radius: 4px;
 }

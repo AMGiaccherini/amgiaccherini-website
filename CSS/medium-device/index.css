@@ -11,21 +11,18 @@
     #title-shadow {
         font-size: 40px;
         left: 51px;
-        top: 54px;
+        top: 55px;
     }
 
     #title-header {height: 150px;}
     .title-text {font-size: 40px;}
     #subtitle {font-size: 20px;}
 
-    #fom {padding-bottom: 120px;}
+    #fom {padding: 120px 0;}
     #fom-text{font-size: 24px;}
     #arrow {width: 28px; height: 28px;}
 
-    #experiments, #skills, #about {
-        padding-left: 36px;
-        padding-right: 36px;
-    }
+    #experiments, #skills, #about {padding: 80px 36px;}
     .common-text{font-size: 18px;}
     #about-title, #skills-title, #exp-title{font-size: 36px;}
     
@@ -39,10 +36,13 @@
 
 @media only screen and (min-width: 1024px) {
 
+    #medium {padding: 2% 4%;}
+
     header {padding: 12.5% 36px;}
-    footer {padding: 40px 54px;}
 
     #about-and-study {flex-direction: row;}
-    #about , #study{width: 50%;}
+    #about, #study{width: 50%;}
     #study{padding: 64px 36px; padding-top: 180px;}
+
+    footer {padding: 40px 54px;}
 }

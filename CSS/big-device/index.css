@@ -1,3 +1,16 @@
 @media only screen and (mid-width: 1440px) {
+
+    header{padding: 10% 80px; gap: 16px;}
+    header span:nth-child(2) br {display: none;}
+
+    #fom {padding: 160px 0;}
+
+    #about, #study, #skills, #experiments{padding: 80px 80px;}
     
+    #study{padding-top: 160px;}
+
+    #exp-container{justify-content: space-evenly;}
+    .exp-section {width: 426px;}
+
+    footer {padding: 40px 110px;}
 }

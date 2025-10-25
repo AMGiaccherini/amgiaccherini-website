@@ -26,7 +26,7 @@
 
 #medium {
     align-self: stretch;
-    padding: 2% 8%;
+    padding: 2% 6%;
     display: none;
     justify-content: space-between;
     align-items: center;
@@ -213,7 +213,7 @@ header {
 /* ===============  FOM  =============== */
 
 #fom {
-    padding-bottom: 60px;
+    padding: 60px 0;
     justify-content: center; 
     align-items: center; 
     display: inline-flex;
