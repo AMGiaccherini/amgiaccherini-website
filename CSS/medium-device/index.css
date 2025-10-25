@@ -29,7 +29,7 @@
     .common-text{font-size: 18px;}
     #about-title, #skills-title, #exp-title{font-size: 36px;}
     
-    #exp-container {padding-bottom: 180px;}
+    #exp-container{padding: 90px 16px;}
     #exp-container , footer {
         flex-direction: row;
         justify-content: space-between;
@@ -41,4 +41,8 @@
 
     header {padding: 12.5% 36px;}
     footer {padding: 40px 54px;}
+
+    #about-and-study {
+        flex-direction: row;
+    }
 }
