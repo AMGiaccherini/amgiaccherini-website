@@ -42,7 +42,7 @@
     header {padding: 12.5% 36px;}
     footer {padding: 40px 54px;}
 
-    #about-and-study {
-        flex-direction: row;
-    }
+    #about-and-study {flex-direction: row;}
+    #about , #study{width: 50%;}
+    #study{padding: 64px 36px; padding-top: 180px;}
 }
