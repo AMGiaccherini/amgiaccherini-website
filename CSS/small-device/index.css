@@ -1,6 +1,18 @@
 /* ===============  SECTIONS  =============== */
 
+#page-face {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    height: 100svh;
+}
 
+#about-and-study {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
 
 
 /* ===============  NAV  =============== */
