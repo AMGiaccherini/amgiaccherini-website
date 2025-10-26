@@ -32,9 +32,10 @@
         justify-content: space-between;
     }
     .exp-section{width: 100%;}
+
 }
 
-@media only screen and (min-width: 64em) or (min-resolution: 1.5dppx){
+@media only screen and (min-width: 64em) {
 
     #medium {padding: 2% 4%;}
 
