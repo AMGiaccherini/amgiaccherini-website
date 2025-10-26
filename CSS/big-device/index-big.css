@@ -3,7 +3,7 @@
     header{padding: 10% 80px; gap: 16px;}
     header span:nth-child(2) br {display: none;}
 
-    #fom {padding-bottom: 160px;}
+    #fom {padding-bottom: 100px;}
 
     #about, #study, #skills, #experiments{padding: 80px 80px;}
     
