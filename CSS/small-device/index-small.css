@@ -4,14 +4,13 @@
     display: flex; 
     flex-direction: column; 
     justify-content: space-between;
-    height: 100svh;
+    height: var(--vwh);
 }
 
 #about-and-study {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: auto;
 }
 
 
@@ -213,7 +212,7 @@ header {
 /* ===============  FOM  =============== */
 
 #fom {
-    padding: 60px 0;
+    padding-bottom: 60px;
     justify-content: center; 
     align-items: center; 
     display: inline-flex;
