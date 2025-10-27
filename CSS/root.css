@@ -6,12 +6,15 @@
     --white: #F3F3F3;
     --accent: #358E99;
     --vwh: 100dvh;
+    --scolor: var(--black);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
 }
+
+html {background-color: var(--black);}
 
 body {
     width: 100%;
@@ -35,9 +38,13 @@ a {
     transition: color 0.3s ease;
 }
 
-a:hover::after {
-        width: 100%;
-    }
+input, textarea {border: none;}
+
+input:focus, textarea:focus{outline: none;}
+
+textarea::-webkit-scrollbar {background-color: transparent;}
+
+a:hover::after {width: 100%;}
 
 a::after {
     content: "";

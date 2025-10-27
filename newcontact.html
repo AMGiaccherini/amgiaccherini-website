@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="img/website-icon/icon.webp">
+        <link rel="stylesheet" href="CSS/root.css">
+        <link rel="stylesheet" href="CSS/small-device/contact-small.css">
+        <link rel="stylesheet" href="CSS/medium-device/contact-medium.css">
+        <link rel="stylesheet" href="CSS/big-device/contact-big.css">
+        <link rel="stylesheet" href="CSS/menu.css">
+        <link rel="stylesheet" href="CSS/footer.css">
+        <link rel="stylesheet" href="CSS/scrollbar/scrollbar.css">
+        <title>Contact</title>
+    </head>
+    <body>
+
+        <!--  ========================      NAV      ========================  -->
+
+        <nav id="mobile" >
+            <div id="hamburger">
+                <!--  Menu Hamburger  -->
+                <div id="nav-icon3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="menu">
+                <div id="overlay">
+                    <div id="overlay-container">
+                        <div class="overlay-link-container">
+                            <a class="overlay-link">home</a>
+                        </div>
+                        <div class="overlay-link-container">
+                            <a class="overlay-link">experiments</a>
+                        </div>
+                        <div class="overlay-link-container">
+                            <a class="overlay-link" style="color: var(--Andre-primary, #CFEE4C);">contacts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav id="medium">
+            <div id="nav-container">
+                <div class="nav-link-container">
+                    <a class="overlay-link">home</a>
+                </div>
+                <div class="nav-link-container">
+                    <a class="overlay-link">experiments</a>
+                </div>
+            </div>
+            <div class="nav-link-container">
+                <a class="overlay-link" style="color: var(--primary);">contacts</a>
+            </div>
+        </nav>
+
+        <!--  ========================      HEADER      ========================  -->
+        <header>
+            <span id="title">Let’s chat</span>
+            <span id="subtitle">get in touch to know more about me and maybe work together :)</span>
+        </header>
+
+        <!--  ========================      FORM      ========================  -->
+
+        <div id="form">
+            <form action="https://formsubmit.co/amgiaccherini@gmail.com" method="POST">
+                <div class="input-container">
+                    <div class="label-section">
+                        <label for="email">Email address</label>
+                    </div>
+                    <div id="input-email">
+                        <input id="email" type="email" placeholder="your email address" required></input>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <div class="label-section">
+                        <label for="text">Message</label>
+                    </div>
+                    <div id="input-message">
+                        <textarea id="text" type="text" rows="3" placeholder="What would you like to know?" required></textarea>
+                    </div>
+                </div>
+                <div class="input-container" style="flex-direction: row; justify-content: center;"> 
+                    <div id="input-email">
+                        <input id="sumbit" type="submit"></input>
+                    </div>
+                </div>
+            </form>
+            <div id="contact-container">
+                <span id="form-text">or contact me</span>
+                <div class="contacts">
+                    <div class="common-text">amgiaccherini@gmail.com</div>
+                </div>
+                <div class="contacts">
+                    <div class="common-text">+39 3923224918</div>
+                </div>
+            </div>
+        </div>
+
+        <!--  ========================      FOOTER      ========================  -->
+
+        <footer>
+            <div id="footer-container">
+                <div class="footer-link-section">
+                    <a class="footer-link">Linkedin</a>
+                </div>
+                <div class="footer-link">
+                    <a class="footer-link">Github</a>
+                </div>
+            </div>
+            <span id="mysister">made with love by Giaccherini siblings</span>
+        </footer>
+
+    </body>
+    <script type="text/javascript" src="JS/Menu.js"></script>
+</html>

@@ -1,0 +1,45 @@
+/* ===============  FOOTER  =============== */
+
+footer {
+    align-self: stretch; 
+    padding-left: 24px; 
+    padding-right: 24px; 
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 24px; 
+    display: flex;
+}
+
+#footer-container {
+    justify-content: center; 
+    align-items: center; 
+    gap: 24px; 
+    display: inline-flex;
+}
+
+.footer-link-section {
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+}
+
+.footer-link {
+    color: var(--accent); 
+    font-size: 16px; 
+    font-family: IBM Plex Mono; 
+    font-weight: bold; 
+    text-decoration: none; 
+    word-wrap: break-word;
+}
+
+#mysister {
+    color: var(--white); 
+    font-size: 12px; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
