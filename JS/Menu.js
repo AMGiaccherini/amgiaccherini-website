@@ -23,3 +23,7 @@ hamburger.addEventListener('click', () => {
 
     shown=!shown;
 });
+
+function popup() {
+    window.alert('This page is still on working, look at GitHub links for my personal projects');
+}
