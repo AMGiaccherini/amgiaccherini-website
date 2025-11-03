@@ -73,7 +73,7 @@
                         <label for="email">Email address</label>
                     </div>
                     <div id="input-email">
-                        <input id="email" type="email" placeholder="your email address" required></input>
+                        <input id="email" type="email" name="email" placeholder="your email address" required></input>
                     </div>
                 </div>
                 <div class="input-container">
@@ -81,7 +81,7 @@
                         <label for="text">Message</label>
                     </div>
                     <div id="input-message">
-                        <textarea id="text" type="text" rows="3" placeholder="What would you like to know?" required></textarea>
+                        <textarea id="text" type="text" name="text" rows="3" placeholder="What would you like to know?" required></textarea>
                     </div>
                 </div>
                 <div class="input-container" style="flex-direction: row; justify-content: center;"> 
@@ -89,6 +89,8 @@
                         <input id="sumbit" type="submit" style="background-color: transparent;"></input>
                     </div>
                 </div>
+                <input type="hidden" name="_captcha" value="false">
+            <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
             </form>
             <div id="contact-container">
                 <span id="form-text">or contact me</span>
