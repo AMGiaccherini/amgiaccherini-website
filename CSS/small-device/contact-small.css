@@ -89,9 +89,9 @@ form {
 #input-email {
     align-self: stretch; 
     padding: 0.75rem 1rem;
-    background: var(--Andre-white, #F3F3F3); 
+    background: var(--white); 
     border-radius: 0.5rem; 
-    outline: 1px var(--Andre-black, #080808) solid; 
+    outline: 1px var(--black) solid; 
     outline-offset: -1px; 
     justify-content: flex-start; 
     align-items: center; 
@@ -167,7 +167,7 @@ textarea {
 
 .common-text {
     color: var(--Andre-accent, #358E99); 
-    font-size: 16px; 
+    font-size: 1em; 
     font-family: IBM Plex Mono; 
     font-weight: 500; 
     word-wrap: break-word;
