@@ -1,5 +1,22 @@
 @media only screen and (min-width: 48em) {
 
+    #mobile {display: none;}
+    #medium {display: inline-flex;}
+
+    header , #form {
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+    }
+
+    form {
+        align-self: center;
+        width: 31.25rem;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (min-width: 64em) {
