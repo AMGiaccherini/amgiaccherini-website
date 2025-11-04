@@ -27,5 +27,13 @@
 }
 
 @media only screen and (min-width: 64em) {
+
+    #medium {padding: 2% 4%;}
     
+    #mb-row {flex-direction: row;}
+
+    header {justify-content: center;}
+
+    #form {top: 6rem;}
+
 }

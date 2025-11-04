@@ -1,3 +1,18 @@
+/* ===============  SECTION  =============== */
+
+#mb-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dimension {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: var(--vwh)
+}
+
 /* ===============  HEADER  =============== */
 
 header {

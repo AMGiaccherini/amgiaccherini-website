@@ -59,63 +59,66 @@
         </nav>
 
         <!--  ========================      HEADER      ========================  -->
-        <header>
-            <span id="title">Let’s chat</span>
-            <span id="subtitle">get in touch to know more about me and maybe work together :)</span>
-        </header>
+        <section id="dimension">
+            <section id="mb-row">
+                <header>
+                    <span id="title">Let’s chat</span>
+                    <span id="subtitle">get in touch to know more about me and maybe work together :)</span>
+                </header>
 
         <!--  ========================      FORM      ========================  -->
 
-        <div id="form">
-            <form action="https://formsubmit.co/amgiaccherini@gmail.com" method="POST">
-                <div class="input-container">
-                    <div class="label-section">
-                        <label for="email">Email address</label>
-                    </div>
-                    <div id="input-email">
-                        <input id="email" type="email" name="email" placeholder="your email address" required></input>
+                <div id="form">
+                    <form action="https://formsubmit.co/amgiaccherini@gmail.com" method="POST">
+                        <div class="input-container">
+                            <div class="label-section">
+                                <label for="email">Email address</label>
+                            </div>
+                            <div id="input-email">
+                                <input id="email" type="email" name="email" placeholder="your email address" required></input>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <div class="label-section">
+                                <label for="text">Message</label>
+                            </div>
+                            <div id="input-message">
+                                <textarea id="text" type="text" name="text" rows="3" placeholder="What would you like to know?" required></textarea>
+                            </div>
+                        </div>
+                        <div class="input-container" style="flex-direction: row; justify-content: center;"> 
+                            <div id="input-email">
+                                <input id="sumbit" type="submit" style="background-color: transparent;"></input>
+                            </div>
+                        </div>
+                        <input type="hidden" name="_captcha" value="false">
+                    <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+                    </form>
+                    <div id="contact-container">
+                        <span id="form-text">or contact me</span>
+                        <div class="contacts">
+                            <div class="common-text">amgiaccherini@gmail.com</div>
+                        </div>
                     </div>
                 </div>
-                <div class="input-container">
-                    <div class="label-section">
-                        <label for="text">Message</label>
-                    </div>
-                    <div id="input-message">
-                        <textarea id="text" type="text" name="text" rows="3" placeholder="What would you like to know?" required></textarea>
-                    </div>
-                </div>
-                <div class="input-container" style="flex-direction: row; justify-content: center;"> 
-                    <div id="input-email">
-                        <input id="sumbit" type="submit" style="background-color: transparent;"></input>
-                    </div>
-                </div>
-                <input type="hidden" name="_captcha" value="false">
-            <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
-            </form>
-            <div id="contact-container">
-                <span id="form-text">or contact me</span>
-                <div class="contacts">
-                    <div class="common-text">amgiaccherini@gmail.com</div>
-                </div>
-            </div>
-        </div>
-
+            </section>
         <!--  ========================      FOOTER      ========================  -->
 
-        <footer>
-            <div id="footer-container">
-                <div class="footer-link-section">
-                    <a class="footer-link" href="https://www.linkedin.com/in/andrea-marco-giaccherini/">Linkedin</a>
+            <footer>
+                <div id="footer-container">
+                    <div class="footer-link-section">
+                        <a class="footer-link" href="https://www.linkedin.com/in/andrea-marco-giaccherini/">Linkedin</a>
+                    </div>
+                    <div class="footer-link">
+                        <a class="footer-link" href="https://github.com/AMGiaccherini">Github</a>
+                    </div>
                 </div>
-                <div class="footer-link">
-                    <a class="footer-link" href="https://github.com/AMGiaccherini">Github</a>
-                </div>
-            </div>
-            <span id="mysister">made with love by Giaccherini siblings</span>
-        </footer>
-
+                <span id="mysister">made with love by Giaccherini siblings</span>
+            </footer>
+        </section>
     </body>
     <script type="text/javascript" src="JS/Menu.js"></script>
+    <script type="text/javascript" src="JS/Display.js"></script>
 <!--
     <script>
         window.addEventListener('load', () => {
