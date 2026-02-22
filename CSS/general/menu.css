@@ -13,7 +13,7 @@
     display: none;
     justify-content: space-between;
     align-items: center;
-
+    box-shadow: 0 0 5px var(--white), 0 0 10px var(--white);
 }
 
 .nav-link-container {
@@ -28,6 +28,9 @@
     align-items: center; 
     gap: 48px; 
     display: flex;
+}
+#medium > .nav-link-container:last-child > .overlay-link {
+    color: var(--green);
 }
 
 #hamburger {
@@ -88,6 +91,9 @@
     align-items: center; 
     gap: 10px; 
     display: inline-flex;
+}
+.overlay-link-container:last-child > .overlay-link {
+    color: var(--green);
 }
 
 .overlay-link {

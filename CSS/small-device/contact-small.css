@@ -26,11 +26,12 @@ header {
 }
 
 #title {
-    color: var(--white);
+    color: var(--green);
     font-size: 1.875em;
     font-family: IBM Plex Mono;
     font-weight: 500;
     word-wrap: break-word;
+    text-shadow: 0 0 5px var(--green), 0 0 15px var(--green), 0 0 30px var(--green);
 }
 
 #subtitle {
@@ -66,6 +67,7 @@ form {
     align-items: flex-start;
     gap: 1rem;
     display: flex;
+    box-shadow: 0 0 5px var(--white), 0 0 30px var(--white);
 }
 
 .input-container {
@@ -166,8 +168,16 @@ textarea {
 }
 
 .common-text {
-    color: var(--Andre-accent, #358E99); 
-    font-size: 1em; 
+    color: var(--accent); 
+    font-size: 0.875em; 
+    font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+#mail-link {
+    color: var(--accent);
+    font: 0.875em;
     font-family: IBM Plex Mono; 
     font-weight: 500; 
     word-wrap: break-word;

@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rajdhani:wght@500&display=swap');
 
 :root {
-    --primary: #CFEE4C;
+    /*--primary: #CFEE4C;
     --black: #080808;
     --white: #F3F3F3;
-    --accent: #358E99;
+    --accent: #358E99;*/
     --vwh: 100dvh;
-    --scolor: var(--black);
+    --black: #010409;
+    --gray: #393E46;
+    --green: #CFEE4C;
+    --white: #EEEEEE;
+    --accent: #358E99;
 }
 
 * {

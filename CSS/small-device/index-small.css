@@ -45,6 +45,7 @@ header {
     font-family: IBM Plex Mono; 
     font-weight: 500; 
     word-wrap: break-word;
+    text-shadow: 0 0 10px var(--green), 0 0 30px var(--green);
 }
 
 #title-container {
@@ -54,11 +55,14 @@ header {
 }
 
 .title-text {
-    color: var(--white); 
+    color: var(--white);
     font-size: 30px; 
     font-family: IBM Plex Mono; 
     font-weight: 500; 
     word-wrap: break-word;
+}
+.title-text:nth-child(2) {
+    color: var(--green);
 }
 
 #subtitle {
@@ -93,7 +97,7 @@ header {
 }
 
 #fom-text {
-    color: var(--primary); 
+    color: var(--green);
     font-size: 16px; 
     font-family: IBM Plex Mono; 
     font-weight: 500; 
@@ -108,16 +112,19 @@ header {
     shape-rendering: geometricPrecision;
     vector-effect: non-scaling-stroke;
 }
+#arrow > path {
+    fill: var(--green);
+}
 
-#fom-button:hover #fom-text, #fom-button:hover #arrow path {
+#fom-button:hover #fom-text, #fom-button:hover #arrow > path {
     color: var(--black);
     fill: var(--black) !important;
 }
 
 #fom-button:hover {
-    background-color: var(--primary);
+    background-color: var(--green);
     transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(207, 238, 76, 0.4);
+    box-shadow: 0 4px 10px var(--green);
 }
 
 
@@ -145,8 +152,8 @@ header {
 #about-container {align-self: stretch;}
 
 .common-text {
-    color: var(--white); 
-    font-size: 15px; 
+    color: var(--white);
+    font-size: 14px; 
     font-family: Rajdhani; 
     font-weight: 500; 
     word-wrap: break-word;
@@ -183,12 +190,17 @@ header {
     padding-bottom: 8px;
     padding-bottom: 8px; 
     border-radius: 24px; 
-    border: 1px var(--accent) solid; 
+    border: 1px var(--accent) solid;
     justify-content: center; 
     align-items: center; 
     gap: 8px; 
     display: inline-flex;
     z-index: 1;
+    background-color: var(--gray);
+    box-shadow: 0 0 7px var(--white), 0 0 14px var(--white);
+}
+.study-section:last-child .study-border {
+    border: 1px var(--accent) dashed;
 }
 
 .hat {
@@ -198,9 +210,12 @@ header {
     shape-rendering: geometricPrecision;
     vector-effect: non-scaling-stroke;
 }
+.hat g > path {
+    fill: var(--white);
+}
 
 .study-text {
-    color: var(--accent); 
+    color: var(--white); 
     font-size: 16px; 
     font-family: IBM Plex Mono; 
     font-weight: 500; 
@@ -242,9 +257,17 @@ header {
 
 #skills-title {
     align-self: stretch; 
-    color: var(--white); 
+    color: var(--text);
     font-size: 20px; 
     font-family: IBM Plex Mono; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.subtitle-text {
+    color: var(--green);
+    font-size: 16px; 
+    font-family: Rajdhani; 
     font-weight: 500; 
     word-wrap: break-word;
 }
@@ -295,7 +318,7 @@ header {
 
 #exp-title {
     align-self: stretch; 
-    color: var(--white); 
+    color: var(--white);
     font-size: 20px; 
     font-family: IBM Plex Mono; 
     font-weight: 500; 
@@ -325,7 +348,7 @@ header {
 .preview-card {
     align-self: stretch; 
     height: 240px; 
-    background: #D9D9D9;
+    background: var(--gray);
 }
 
 .card-container {
@@ -345,7 +368,8 @@ header {
 }
 
 .card-link {
-    color: var(--primary); 
+    /*color: var(--primary);*/
+    color: var(--green); 
     font-size: 14px; 
     font-family: IBM Plex Mono; 
     font-weight: 500; 
