@@ -257,7 +257,7 @@ header {
 
 #skills-title {
     align-self: stretch; 
-    color: var(--text);
+    color: var(--white);
     font-size: 20px; 
     font-family: IBM Plex Mono; 
     font-weight: 500; 
