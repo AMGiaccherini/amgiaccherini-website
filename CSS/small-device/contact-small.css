@@ -60,7 +60,7 @@ header {
 form {
     align-self: stretch;
     padding: 1rem 1.5rem 2rem;
-    background: rgba(243, 243, 243, 0.1);
+    background: var(--black);
     border-radius: 1.25rem;
     flex-direction: column;
     justify-content: flex-start;
@@ -68,6 +68,11 @@ form {
     gap: 1rem;
     display: flex;
     box-shadow: 0 0 5px var(--white), 0 0 30px var(--white);
+}
+
+form > .input-container:nth-child(3) {
+    flex-direction: row; 
+    justify-content: center; 
 }
 
 .input-container {
@@ -88,10 +93,10 @@ form {
     display: inline-flex;
 }
 
-#input-email {
+.input-email {
     align-self: stretch; 
     padding: 0.75rem 1rem;
-    background: var(--white); 
+    background: var(--gray); 
     border-radius: 0.5rem; 
     outline: 1px var(--black) solid; 
     outline-offset: -1px; 
@@ -100,11 +105,20 @@ form {
     gap: 0.635rem;
     display: inline-flex;
 }
+.input-container:nth-child(3) .input-email { 
+    background-color: var(--black);
+    outline: 1px var(--accent) solid;
+    transition: all 0.3s ease-in-out;
+}
+.input-container:nth-child(3) .input-email:hover {
+    background-color: var(--red);
+    outline: 1px var(--red) solid;
+}
 
 #input-message {
     align-self: stretch;
     padding: 0.75rem 1rem;
-    background: var(--white);
+    background: var(--gray);
     border-radius: 0.5rem;
     outline: 1px var(--black) solid;
     outline-offset: -1px;
@@ -127,21 +141,38 @@ label {
 input {
     flex: 1 1 0;
     color: var(--black);
+    background-color: transparent;
     font-size: 0.875em;
     font-family: Rajdhani;
     font-weight: 500;
     word-wrap: break-word;
+}
+input::placeholder {
+    color: var(--white);
+}
+.input-container:nth-child(3) input {
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+.input-container:nth-child(3):hover input {
+    font-weight: bolder;
+    text-shadow: 0 0 5px var(--white), 0 0 15px var(--white);
 }
 
 textarea {
     resize: none;
     align-self: stretch;
-    color: var(--black);
+    color: var(--white);
+    background-color: transparent;
     font-size: 0.875em;
     font-family: Rajdhani;
     font-weight: 500;
     word-wrap: break-word;
 }
+textarea::placeholder {
+    color: var(--white);
+}
+
 
 #contact-container  {
     align-self: stretch;
