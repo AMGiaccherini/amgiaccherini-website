@@ -1,11 +1,6 @@
-const request = new XMLHttpRequest();
-let obj;
+let projects = [];
 
-request.onload = function() {
-    obj = JSON.parse(this.responseText);  
-};
-
-request.open("GET", "files/propjects/projects.json", true);
-request.send();
-
-alert(obj[0]);
+document.addEventListener("DOMContentLoaded", async () => {
+    const res = await fetch("files/projects/projects.json");
+    projects = await res.json();
+});

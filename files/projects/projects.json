@@ -1,6 +1,6 @@
 [
 	{
-		"id": 1,
+		"id": 0,
 		"title": "DungeonEscape",
 		"description": "Puzzle game in prima persona sviluppato in Unreal Engine 5 seguendo un corso. Progetto didattico per apprendere la creazione di meccaniche di gioco in C++: sistema di inventario, interazione tramite sweep trace, componenti Mover e TriggerComponent con supporto a serrature e pressure plate.",
 		"stacks": ["Unreal Engine", "C++"],
@@ -9,7 +9,7 @@
 		"year": 2025
 	},
 	{
-		"id": 2,
+		"id": 1,
 		"title": "ShooterSam",
 		"description": "Third-person shooter sviluppato in Unreal Engine 5 seguendo un corso. Progetto didattico focalizzato sull'intelligenza artificiale: Behavior Tree, Blackboard, BT Services e Tasks custom, sistema hitscan con line trace e gestione della vita tramite HUD.",
 		"stacks": ["Unreal Engine", "C++"],
@@ -18,7 +18,7 @@
 		"year": 2025
 	},
 	{
-		"id": 3,
+		"id": 2,
 		"title": "BattleBlaster",
 		"description": "Top-down tank shooter sviluppato in Unreal Engine 5 seguendo un corso introduttivo. Progetto didattico per apprendere le basi del C++ in UE5: ereditarietà tra classi, Enhanced Input System, sistema di danno, timer, Material Instances e UI con UMG.",
 		"stacks": ["Unreal Engine", "C++"],
@@ -27,7 +27,7 @@
 		"year": 2025
 	},
 	{
-		"id": 4,
+		"id": 3,
 		"title": "DailyObjectives",
 		"description": "Applicazione desktop sviluppata autonomamente in Java con Swing per dimostrare competenze nel linguaggio. Permette di gestire obiettivi giornalieri organizzati per data, con archivio storico, persistenza su file e interfaccia grafica custom con tema scuro.",
 		"stacks": ["Java"],
