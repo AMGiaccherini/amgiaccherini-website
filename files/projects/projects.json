@@ -6,7 +6,6 @@
 		"stacks": ["Unreal Engine", "C++"],
 		"category": "Game",
 		"url": "https://github.com/AMGiaccherini/DungeonEscape",
-		"image": "",
 		"year": 2025
 	},
 	{
@@ -16,7 +15,6 @@
 		"stacks": ["Unreal Engine", "C++"],
 		"category": "Game",
 		"url": "https://github.com/AMGiaccherini/ShooterSam",
-		"image": "",
 		"year": 2025
 	},
 	{
@@ -26,7 +24,6 @@
 		"stacks": ["Unreal Engine", "C++"],
 		"category": "Game",
 		"url": "https://github.com/AMGiaccherini/BattleBlaster",
-		"image": "",
 		"year": 2025
 	},
 	{
@@ -36,7 +33,6 @@
 		"stacks": ["Java"],
 		"category": "App",
 		"url": "https://github.com/AMGiaccherini/DailyObjectives",
-		"image": "",
 		"year": 2026
 	}
 ]
