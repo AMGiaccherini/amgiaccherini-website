@@ -1,0 +1,120 @@
+.experiences {
+    display: flex; 
+    background-color: var(--black); 
+    align-items: center; 
+    justify-content: center;
+    padding: 3.125em 0;
+    gap: 3.125em;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.year {
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    padding: 3em 0 6.875em 0;
+}
+
+.year-title {
+    color: var(--white);
+    font-size: 5rem;
+    position: relative;
+    opacity: .15;
+    line-height: 4.375rem;
+}
+
+.year-title::after {
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: currentColor;
+}
+
+.experience-box {
+    width: 17.1875rem; 
+    height: 17.1875rem; 
+    background: linear-gradient(to top, var(--gray), var(--black));
+    border-radius: 25px;
+    border: 2px solid var(--gray);
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: inline-flex;
+    color: var(--white);
+    font-family: IBM Plex Mono;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: .875em 0 0;
+    align-self: center;
+    position: relative;
+    line-height: 1.4;
+}
+
+.desc {
+    display: flex;
+    color: var(--accent);
+    font-family: Rajdhani;
+    font-size: 1rem;
+    padding: .875em;
+    height: 9.625rem;
+}
+
+.info {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 .875em;
+    justify-content: space-between;
+    position: relative;
+}
+
+.info::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 1em;
+    right: 1em;
+    height: 2px;
+    background-color: currentColor;
+    color: var(--white);
+}
+
+.stacks {
+    display: flex;
+    gap: 1em;
+}
+
+.stack {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .9375em;
+    border: 1px solid var(--green);
+    display: inline-flex;
+    align-self: center;
+    padding: .5em;
+    font-family: Rajdhani;
+    font-size: .8rem;
+    text-shadow: 0 1px 5px var(--white), 0 1px 7px var(--white);
+}
+
+.category {
+    display: inline-flex;
+    color: var(--white);
+    background-color: var(--red);
+    text-shadow: 0 1px 5px var(--white), 0 1px 7px var(--white);
+    border-radius: .9375em;
+    border: 1px solid var(--red);
+    padding: .5em;
+    font-family: Rajdhani;
+    font-size: .8rem;
+    align-self: center;
+    justify-self: flex-end;
+}

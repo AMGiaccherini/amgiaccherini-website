@@ -45,9 +45,11 @@ input:focus, textarea:focus{outline: none;}
 
 textarea::-webkit-scrollbar {background-color: transparent;}
 
-a:hover::after {width: 100%;}
+a:hover::after , .experience-box:hover > .title::after {width: 100%;}
 
-a::after {
+.experience-box:hover {cursor: pointer;}
+
+a::after , .experience-box > .title::after{
     content: "";
     position: absolute;
     bottom: 0;

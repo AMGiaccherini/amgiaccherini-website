@@ -2,7 +2,7 @@
 	{
 		"id": 0,
 		"title": "DungeonEscape",
-		"description": "Puzzle game in prima persona sviluppato in Unreal Engine 5 seguendo un corso. Progetto didattico per apprendere la creazione di meccaniche di gioco in C++: sistema di inventario, interazione tramite sweep trace, componenti Mover e TriggerComponent con supporto a serrature e pressure plate.",
+		"description": "FPS puzzle game on UE5, built while following a course. C++ mechanics: inventory system, sweep trace interaction, Mover and TriggerComponent for locks and pressure plates.",
 		"stacks": ["Unreal Engine", "C++"],
 		"category": "Game",
 		"url": "https://github.com/AMGiaccherini/DungeonEscape",
@@ -11,7 +11,7 @@
 	{
 		"id": 1,
 		"title": "ShooterSam",
-		"description": "Third-person shooter sviluppato in Unreal Engine 5 seguendo un corso. Progetto didattico focalizzato sull'intelligenza artificiale: Behavior Tree, Blackboard, BT Services e Tasks custom, sistema hitscan con line trace e gestione della vita tramite HUD.",
+		"description": "Third-person shooter on UE5, built while following a course. AI focus: Behavior Tree, Blackboard, custom BT Services and Tasks, hitscan with line trace and HUD health system.",
 		"stacks": ["Unreal Engine", "C++"],
 		"category": "Game",
 		"url": "https://github.com/AMGiaccherini/ShooterSam",
@@ -20,7 +20,7 @@
 	{
 		"id": 2,
 		"title": "BattleBlaster",
-		"description": "Top-down tank shooter sviluppato in Unreal Engine 5 seguendo un corso introduttivo. Progetto didattico per apprendere le basi del C++ in UE5: ereditarietà tra classi, Enhanced Input System, sistema di danno, timer, Material Instances e UI con UMG.",
+		"description": "Top-down tank shooter on UE5, built while following an introductory course. C++ basics: class inheritance, Enhanced Input System, damage system, timers, Material Instances and UMG UI.",
 		"stacks": ["Unreal Engine", "C++"],
 		"category": "Game",
 		"url": "https://github.com/AMGiaccherini/BattleBlaster",
@@ -29,7 +29,7 @@
 	{
 		"id": 3,
 		"title": "DailyObjectives",
-		"description": "Applicazione desktop sviluppata autonomamente in Java con Swing per dimostrare competenze nel linguaggio. Permette di gestire obiettivi giornalieri organizzati per data, con archivio storico, persistenza su file e interfaccia grafica custom con tema scuro.",
+		"description": "Desktop app built independently in Java with Swing. Manages daily objectives organized by date, with historical archive, file persistence and a custom dark-themed GUI.",
 		"stacks": ["Java"],
 		"category": "App",
 		"url": "https://github.com/AMGiaccherini/DailyObjectives",
