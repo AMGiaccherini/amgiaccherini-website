@@ -1,10 +1,90 @@
+.filter {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sort {
+    -webkit-tap-highlight-color: transparent;
+    padding: 0.5rem .875rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.sort svg {width: 1.875em;height: 1.875em;}
+.sort path {fill: var(--white);}
+
+#sort-page {
+    height: var(--vwh);
+    width: 100%;
+    background-color: var(--menu-bg);
+    display: none;
+    position: fixed;
+    pointer-events: none;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-direction: row;
+    position: relative;
+    line-height: 2.5;
+    padding: 5rem 1.25rem 0;
+}
+
+
+.sorting-title {
+    color: var(--accent);
+    font-family: IBM Plex Mono;
+    font-size: 1.25em;
+    font-weight: bold;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border-bottom: 2px solid var(--accent);
+    transition: all .3s ease;
+}
+
+.sort-active {
+    color: var(--green);
+    text-shadow: 0 0 3px var(--black), 0 0 5px var(--white);
+    border-bottom: 2px solid var(--green);
+}
+
+.sorting-list {
+    display: none;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    align-self: stretch;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 2rem 3.5rem;
+}
+.sorting-list.list-active {display: flex;}
+
+.stack.uncheck , .category.uncheck {
+    background-color: var(--uncheck); 
+    border: 2px solid var(--uncheck);
+    cursor: pointer;
+}
+
 .experiences {
     display: flex; 
     background-color: var(--black); 
     align-items: center; 
     justify-content: center;
-    padding: 3.125em 0;
-    gap: 3.125em;
+    padding: 3.125rem 0;
+    gap: 3.125rem;
     flex-direction: column;
     align-content: space-between;
 }
@@ -13,15 +93,16 @@
     display: flex;
     align-self: stretch;
     justify-content: center;
-    padding: 3em 0 6.875em 0;
+    padding: 3rem 0 6.875rem 0;
 }
 
 .year-title {
     color: var(--white);
     font-size: 5rem;
+    font-family: Rajdhani;
     position: relative;
     opacity: .15;
-    line-height: 4.375rem;
+    line-height: 1;
 }
 
 .year-title::after {
@@ -36,8 +117,8 @@
 }
 
 .experience-box {
-    width: 17.1875rem; 
-    height: 17.1875rem; 
+    width: 17.1875em; 
+    height: 17.1875em; 
     background: linear-gradient(to top, var(--gray), var(--black));
     border-radius: 25px;
     border: 2px solid var(--gray);
@@ -49,20 +130,21 @@
     display: inline-flex;
     color: var(--white);
     font-family: IBM Plex Mono;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: bolder;
-    padding: .875em 0 0;
+    padding: .875rem 0 0;
     align-self: center;
     position: relative;
     line-height: 1.4;
 }
+.title::after{width: 100%;}
 
 .desc {
     display: flex;
     color: var(--accent);
     font-family: Rajdhani;
-    font-size: 1rem;
-    padding: .875em;
+    font-size: 1em;
+    padding: .875rem;
     height: 9.625rem;
 }
 
@@ -71,7 +153,7 @@
     flex: 1;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 0 .875em;
+    padding: 0 .875rem;
     justify-content: space-between;
     position: relative;
 }
@@ -80,8 +162,8 @@
     position: absolute;
     content: "";
     top: 0;
-    left: 1em;
-    right: 1em;
+    left: .875rem;
+    right: .875rem;
     height: 2px;
     background-color: currentColor;
     color: var(--white);
@@ -89,32 +171,32 @@
 
 .stacks {
     display: flex;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .stack {
+    -webkit-tap-highlight-color: transparent;
     background-color: var(--black);
     color: var(--white);
-    border-radius: .9375em;
-    border: 1px solid var(--green);
+    border-radius: 15px;
+    border: 2px solid var(--green);
     display: inline-flex;
     align-self: center;
-    padding: .5em;
+    padding: .5rem;
     font-family: Rajdhani;
-    font-size: .8rem;
-    text-shadow: 0 1px 5px var(--white), 0 1px 7px var(--white);
+    font-size: .8em;
 }
 
 .category {
+    -webkit-tap-highlight-color: transparent;
     display: inline-flex;
     color: var(--white);
     background-color: var(--red);
-    text-shadow: 0 1px 5px var(--white), 0 1px 7px var(--white);
-    border-radius: .9375em;
-    border: 1px solid var(--red);
-    padding: .5em;
+    border-radius: 15px;
+    border: 2px solid var(--black);
+    padding: .5rem;
     font-family: Rajdhani;
-    font-size: .8rem;
+    font-size: .8em;
     align-self: center;
     justify-self: flex-end;
 }

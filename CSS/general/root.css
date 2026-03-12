@@ -8,6 +8,8 @@
     --red: #8B0000;
     --white: #EEEEEE;
     --accent: #358E99;
+    --uncheck: rgba(201, 201, 201, 0.9);
+    --menu-bg: rgba(0.79, 0.79, 0.79, 0.9);
 }
 
 * {
@@ -45,7 +47,7 @@ input:focus, textarea:focus{outline: none;}
 
 textarea::-webkit-scrollbar {background-color: transparent;}
 
-a:hover::after , .experience-box:hover > .title::after {width: 100%;}
+a:hover::after {width: 100%;}
 
 .experience-box:hover {cursor: pointer;}
 
@@ -54,7 +56,6 @@ a::after , .experience-box > .title::after{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0;
     height: 2px;
     background: currentColor;
     transition: width 0.3s ease;

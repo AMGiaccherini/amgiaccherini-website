@@ -6,6 +6,10 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .title::after {width: 0;}
+    .experience-box:hover > .title::after {width: 100%;}
+    
 }
 
 @media only screen and (min-width: 64em) {

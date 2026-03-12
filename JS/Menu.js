@@ -1,10 +1,10 @@
 const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('menu');
-const body = document.body;
+const mobile = document.getElementById('mobile');
 const animation = document.getElementById('nav-icon3');
 
-let shown = true;
-let scrollY = 0;
+var shown = true;
+var scrollY = 0;
 
 hamburger.addEventListener('click', () => {
 
@@ -13,15 +13,17 @@ hamburger.addEventListener('click', () => {
     
     if(shown) {
         scrollY = window.scrollY;
-        body.style.position = 'fixed';
-        body.style.top = `-${scrollY}px`;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollY}px`;
+        hamburger.style.zIndex = 4;
     } else {
-        body.style.position = '';
-        body.style.top = '';
+        document.body.style.position = '';
+        document.body.style.top = '';
         window.scrollTo(0, scrollY);
+        hamburger.style.zIndex = 2;
     }
 
-    shown=!shown;
+    shown= !shown;
 });
 
 function popup() {

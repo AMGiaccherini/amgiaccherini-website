@@ -1,17 +1,105 @@
 const expsdiv = document.getElementById('experiences');
+const stack = document.getElementById('stacks');
+const cate = document.getElementById('category');
+const cates = document.querySelectorAll('#list-category .category');
+const stacks = document.querySelectorAll('#list-stacks .stack');
 
 let projects = [];
-var currentYear;
+let activeStacks = new Set();
+let activeCategory = new Set();
 
 document.addEventListener("DOMContentLoaded", async () => {
     const res = await fetch("files/projects/projects.json");
     projects = await res.json();
 
-    renderProjects();
+    renderProjects(projects);
+
+    addFilters();
+
+    document.getElementById('list-stacks').addEventListener('click', (e) => {
+        if (e.target.classList.contains('stack')) {
+            toggleFilter(e.target, activeStacks);
+            applyFilters();
+        }
+    });
+
+    document.getElementById('list-category').addEventListener('click', (e) => {
+        if (e.target.classList.contains('category')) {
+            toggleFilter(e.target, activeCategory);
+            applyFilters();
+        }
+    });
 });
 
-function renderProjects() {
+stack.onclick = () => {
+    stack.classList.toggle('sort-active');
+    document.getElementById('list-stacks').classList.toggle('list-active');
+    cate.classList.toggle('sort-active');
+    document.getElementById('list-category').classList.toggle('list-active');
+}
+
+cate.onclick = () => {
+    cate.classList.toggle('sort-active');
+    document.getElementById('list-category').classList.toggle('list-active');
+    stack.classList.toggle('sort-active');
+    document.getElementById('list-stacks').classList.toggle('list-active');
+}
+
+function toggleFilter(span, activeSet) {
+    const value = span.textContent.trim();
+
+    if(activeSet.has(value)) 
+        activeSet.delete(value);
+    else 
+        activeSet.add(value);
+    span.classList.toggle('uncheck');
+}
+
+function applyFilters() {
+    const filtered = projects.filter(p => {
+        const matchStacks = activeStacks.size === 0 || p.stacks.some (s => activeStacks.has(s));
+        const matchCategory = activeCategory.size === 0 || activeCategory.has(p.category);
+        return matchStacks && matchCategory; 
+    });
+
+    renderProjects(filtered);
+}
+
+function addFilters() {
+    const stackdiv =  document.getElementById('list-stacks');
+    const catediv = document.getElementById('list-category');
+
+    let stacklist = [];
+    let catelist = [];
+
     projects.forEach(p => {
+        p.stacks.forEach(s => {
+            if(!stacklist.includes(s)) {
+                stacklist.push(s);
+                var stack = document.createElement('span');
+                stack.setAttribute('class', 'stack');
+                stack.classList.add('uncheck');
+                stack.innerHTML = s;
+                stackdiv.append(stack);
+            }
+        });
+
+        if(!catelist.includes(p.category)) {
+            catelist.push(p.category);
+            var category = document.createElement('span');
+            category.setAttribute('class', 'category');
+            category.classList.add('uncheck');
+            category.innerHTML = p.category;
+            catediv.append(category);
+        }
+    });
+}
+
+function renderProjects(pjs) {
+    expsdiv.innerHTML = '';
+    var currentYear = null;
+
+    pjs.forEach(p => {
         if (!currentYear || currentYear < p.year) {
             const yeardiv = document.createElement('div');
             yeardiv.setAttribute('class', 'year');
