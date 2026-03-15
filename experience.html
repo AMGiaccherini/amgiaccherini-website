@@ -3,12 +3,15 @@
 <head>
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="img/website-icon/icon.webp">
+        <link rel="icon" type="image/x-icon" href="files/website-icon/icon.webp">
         <link rel="stylesheet" href="CSS/general/root.css">
         <link rel="stylesheet" href="CSS/general/menu.css">
         <link rel="stylesheet" href="CSS/general/footer.css">
+        <link rel="stylesheet" href="CSS/small-device/experience-small.css">
+        <link rel="stylesheet" href="CSS/medium-device/experience-medium.css">
+        <link rel="stylesheet" href="CSS/big-device/experience-big.css">
         <link rel="stylesheet" href="CSS/general/scrollbar.css">
-        <title>Home</title>
+        <title>Experiences</title>
     </head>
     <body>
         
@@ -28,10 +31,10 @@
                 <div id="overlay">
                     <div id="overlay-container">
                         <div class="overlay-link-container">
-                            <a class="overlay-link" href="#">home</a>
+                            <a class="overlay-link" href="index.html">home</a>
                         </div>
                         <div class="overlay-link-container">
-                            <a class="overlay-link" onclick="popup()">experiments</a>
+                            <a class="overlay-link" href="">experiments</a>
                         </div>
                         <div class="overlay-link-container">
                             <a class="overlay-link" href="contact.html">contacts</a>
@@ -44,16 +47,71 @@
         <nav id="medium">
             <div id="nav-container">
                 <div class="nav-link-container">
-                    <a class="overlay-link" href="#">home</a>
+                    <a class="overlay-link" href="index.html">home</a>
                 </div>
                 <div class="nav-link-container">
-                    <a class="overlay-link" onclick="popup()">experiments</a>
+                    <a class="overlay-link" href="">experiments</a>
                 </div>
             </div>
             <div class="nav-link-container">
                     <a class="overlay-link" href="contact.html">contacts</a>
             </div>
         </nav>
+
+            <!-- ========================   FILTER-MOBILE   ======================== -->
+
+        <div class="filter">
+            <div id="magnifying-glass" class="sort">
+                <svg viewBox="0 0 500 500">
+                    <path d="M471.882 407.567 360.567 296.243a214.3 214.3 0 0 1-64.331 64.321L407.56 471.888c17.772 17.768 46.587 17.768 
+                            64.321 0 17.773-17.739 17.773-46.554.001-64.321M363.909 181.955C363.909 81.473 282.44 0 181.956 0 81.474 0 
+                            .001 81.473.001 181.955s81.473 181.951 181.955 181.951c100.484 0 181.953-81.469 181.953-181.951M181.956 
+                            318.416c-75.252 0-136.465-61.208-136.465-136.46S106.704 45.491 181.956 45.491c75.25 0 136.468 61.213 136.468 
+                            136.465s-61.218 136.46-136.468 136.46"/>
+                    <path d="M75.817 181.955h30.322c0-41.803 34.014-75.814 75.816-75.814V75.816c-58.517 0-106.138 47.621-106.138 106.139"/>
+                </svg>
+            </div>
+            <div id="sort-page">
+                <div class="filters">
+                    <div id="stacks" class="sorting-title sort-active">Stacks</div>
+                    <div id="category" class="sorting-title">Category</div>
+                </div>
+                <div id="list-stacks" class="sorting-list list-active"></div>
+                <div id="list-category" class="sorting-list"></div>
+            </div>
+        </div>
+
+        <!--  ========================      EXPERIENCES     ========================  -->
+
+        <div id="page-layout">
+            <div id="experiences" class="experiences"></div>
+            <div id="no-projects" class="zero-projects">
+                <h1> No projects found</h1>
+                <span>try a different filter combination</span>
+            </div>
+            <div id="filter-desktop">
+                <div id="sort-panel-desktop">
+                    <div class="filter-section">
+                        <div class="filter-title" id="stacks-desktop">
+                            <span>Stacks</span>
+                            <span class="filter-arrow">▾</span>
+                        </div>
+                        <div id="list-stacks-desktop" class="filter-list"></div>
+                    </div>
+                    <div class="filter-section">
+                        <div class="filter-title" id="category-desktop">
+                            <span>Category</span>
+                            <span class="filter-arrow">▾</span>
+                        </div>
+                        <div id="list-category-desktop" class="filter-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+            <!--  ========================      FOOTER      ========================  -->
+
         <footer>
             <div id="footer-container">
                 <div class="footer-link-section">
@@ -70,4 +128,5 @@
     <script type="text/javascript" src="JS/Display.js"></script>
     <script type="text/javascript" src="JS/Menu.js"></script>
     <script type="text/javascript" src="JS/Projects.js"></script>
+    <script type="text/javascript" src="JS/Sort.js"></script>
 </html>

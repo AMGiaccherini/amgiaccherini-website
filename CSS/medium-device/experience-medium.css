@@ -12,6 +12,12 @@
         flex: none;
     }
 
+    .zero-projects {
+        height: calc(100vh - 260px);
+        max-width: 17.1875rem;
+        flex-shrink: 0;
+    }
+
     #filter-desktop {display: block;}
 
     #filter-desktop .stack:not(.uncheck),
@@ -36,6 +42,8 @@
 @media only screen and (min-width: 64em) {
 
     #medium {padding: 2% 4%;}
+
+    .zero-projects {height: calc(100vh - 270px);}
 
     footer {padding: 40px 54px;}
 }

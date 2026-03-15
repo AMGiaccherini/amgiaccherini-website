@@ -147,6 +147,16 @@ function renderProjects(pjs) {
     expsdiv.innerHTML = '';
     var currentYear = null;
 
+    if (pjs.length === 0) {
+        document.getElementById('no-projects').style.display = 'flex';
+        expsdiv.style.display = 'none';
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.getElementById('no-projects').style.display = 'none';
+        expsdiv.style.display = 'flex';
+        document.body.style.overflow = '';
+    }
+
     pjs.forEach(p => {
         if (!currentYear || currentYear < p.year) {
             const yeardiv = document.createElement('div');

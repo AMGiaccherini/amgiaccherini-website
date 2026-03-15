@@ -1,3 +1,12 @@
+/* =============== SCROLLBAR =============== */
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 4px;
+}
+
+/* =============== FILTER-MOBILE =============== */
+
 .filter {
     width: 100%;
     display: flex;
@@ -40,7 +49,6 @@
     line-height: 2.5;
     padding: 5rem 1.25rem 0;
 }
-
 
 .sorting-title {
     color: var(--accent);
@@ -101,13 +109,16 @@
     cursor: pointer;
 }
 
+/* =============== PAGE-LAYOUT =============== */
+
 #page-layout {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 3rem 3rem;
+    padding: 3rem 3rem 0;
     gap: 2em;
-    justify-content: space-around
+    justify-content: space-around;
+    flex: 1;
 }
 
 .experiences {
@@ -118,6 +129,28 @@
     gap: 3.125rem;
     flex-direction: column;
     flex: 1;
+}
+
+.zero-projects {
+    display: none;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 240px);
+    flex-direction: column;
+}
+
+.zero-projects h1 {
+    color: var(--white);
+    font-weight: bold;
+    font-family: IBM Plex Mono;
+    font-size: 1.5em;
+}
+
+.zero-projects span {
+    color: var(--accent);
+    font-family: IBM Plex Mono;
+    font-size: .75em;
 }
 
 #filter-desktop {
@@ -200,6 +233,8 @@
 #filter-desktop .category:not(.uncheck) {
     color: var(--white);
 }
+
+/* =============== EXPERIENCE =============== */
 
 .year {
     display: flex;
