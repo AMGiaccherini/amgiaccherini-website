@@ -49,9 +49,7 @@ textarea::-webkit-scrollbar {background-color: transparent;}
 
 a:hover::after {width: 100%;}
 
-.experience-box:hover {cursor: pointer;}
-
-a::after , .experience-box > .title::after{
+a::after {
     content: "";
     position: absolute;
     bottom: 0;

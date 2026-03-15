@@ -3,6 +3,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    position: fixed;
+    z-index: 2;
 }
 
 .sort {
@@ -72,10 +74,40 @@
 }
 .sorting-list.list-active {display: flex;}
 
+.sorting-list .stack, .sorting-list .category {
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+}
+
+.sorting-list .stack::before, .sorting-list .category::before {
+    content: '';
+    width: .625rem;
+    height: .625rem;
+    border: 2px solid var(--black);
+    border-radius: .125rem;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.sorting-list .stack:not(.uncheck)::before, .sorting-list .category:not(.uncheck)::before {
+    background: var(--green);
+}
+
 .stack.uncheck , .category.uncheck {
     background-color: var(--uncheck); 
     border: 2px solid var(--uncheck);
+    color: var(--black);
     cursor: pointer;
+}
+
+#page-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3rem 3rem;
+    gap: 2em;
+    justify-content: space-around
 }
 
 .experiences {
@@ -83,10 +115,90 @@
     background-color: var(--black); 
     align-items: center; 
     justify-content: center;
-    padding: 3.125rem 0;
     gap: 3.125rem;
     flex-direction: column;
-    align-content: space-between;
+    flex: 1;
+}
+
+#filter-desktop {
+    width: 12.5rem;
+    flex-shrink: 0;
+    position: sticky;
+    top: 40vh;
+    align-self: flex-start;
+    background: var(--black);
+    border: 0.5px solid var(--gray);
+    border-radius: .375rem;
+    overflow: hidden;
+    display: none;
+}
+
+.filter-section {border-bottom: 0.5px solid var(--gray);}
+.filter-section:last-child {border-bottom: none;}
+
+.filter-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .65rem 1rem;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .8125rem;
+    color: var(--white);
+    user-select: none;
+}
+
+.filter-arrow {
+    font-size: 1rem;
+    color: var(--green);
+    transition: transform 0.2s ease;
+}
+.filter-arrow.collapsed {transform: rotate(-90deg);}
+
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .25rem;
+    padding: 0 .5rem .5rem;
+    max-height: 18.75rem;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.filter-list.collapsed {max-height: 0; padding: 0 .5rem;}
+
+#filter-desktop .stack,
+#filter-desktop .category {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .25em .625em;
+    font-size: .75rem;
+    color: var(--black);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+#filter-desktop .stack::before,
+#filter-desktop .category::before {
+    content: '';
+    width: .625rem;
+    height: .625rem;
+    border: .5px solid var(--gray);
+    border-radius: .125rem;
+    flex-shrink: 0;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+#filter-desktop .stack:not(.uncheck)::before,
+#filter-desktop .category:not(.uncheck)::before {
+    background: var(--green);
+    border-color: var(--green);
+}
+
+#filter-desktop .stack:not(.uncheck),
+#filter-desktop .category:not(.uncheck) {
+    color: var(--white);
 }
 
 .year {
@@ -124,6 +236,7 @@
     border: 2px solid var(--gray);
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .title {
@@ -137,7 +250,22 @@
     position: relative;
     line-height: 1.4;
 }
-.title::after{width: 100%;}
+.experience-box > .title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease;
+    width: 100%;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
 .desc {
     display: flex;
@@ -179,8 +307,8 @@
     background-color: var(--black);
     color: var(--white);
     border-radius: 15px;
-    border: 2px solid var(--green);
     display: inline-flex;
+    border: 2px solid var(--black);
     align-self: center;
     padding: .5rem;
     font-family: Rajdhani;
@@ -193,7 +321,7 @@
     color: var(--white);
     background-color: var(--red);
     border-radius: 15px;
-    border: 2px solid var(--black);
+    border: 2px solid var(--red);
     padding: .5rem;
     font-family: Rajdhani;
     font-size: .8em;

@@ -2,14 +2,35 @@
     #mobile {display: none;}
     #medium {display: inline-flex;}
 
+    .filter {display: none;}
+
+    .experiences {
+        align-items: flex-start; 
+        padding: 0;
+        align-self: flex-start;
+        width: fit-content;
+        flex: none;
+    }
+
+    #filter-desktop {display: block;}
+
+    #filter-desktop .stack:not(.uncheck),
+    #filter-desktop .category:not(.uncheck) {
+        color: var(--white);
+    }
+
+    .year {
+        align-self: flex-start;
+        padding-bottom: 0;
+    }
+
+    .experience-box > .title::after {width: 0;}
+    .experience-box:hover > .title::after {width: 100%;}
+
     footer {
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .title::after {width: 0;}
-    .experience-box:hover > .title::after {width: 100%;}
-    
+    }    
 }
 
 @media only screen and (min-width: 64em) {

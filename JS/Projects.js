@@ -3,6 +3,8 @@ const stack = document.getElementById('stacks');
 const cate = document.getElementById('category');
 const cates = document.querySelectorAll('#list-category .category');
 const stacks = document.querySelectorAll('#list-stacks .stack');
+const stackDesktop = document.getElementById('stacks-desktop');
+const cateDesktop = document.getElementById('category-desktop');
 
 let projects = [];
 let activeStacks = new Set();
@@ -19,6 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById('list-stacks').addEventListener('click', (e) => {
         if (e.target.classList.contains('stack')) {
             toggleFilter(e.target, activeStacks);
+            syncFilters('stack', e.target.textContent.trim(), e.target);
             applyFilters();
         }
     });
@@ -26,10 +29,30 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById('list-category').addEventListener('click', (e) => {
         if (e.target.classList.contains('category')) {
             toggleFilter(e.target, activeCategory);
+            syncFilters('category', e.target.textContent.trim(), e.target);
+            applyFilters();
+        }
+    });
+
+    document.getElementById('list-stacks-desktop').addEventListener('click', (e) => {
+        if (e.target.classList.contains('stack')) {
+            toggleFilter(e.target, activeStacks);
+            syncFilters('stack', e.target.textContent.trim(), e.target);
+            applyFilters();
+        }
+    });
+
+    document.getElementById('list-category-desktop').addEventListener('click', (e) => {
+        if (e.target.classList.contains('category')) {
+            toggleFilter(e.target, activeCategory);
+            syncFilters('category', e.target.textContent.trim(), e.target);
             applyFilters();
         }
     });
 });
+
+stackDesktop.onclick = () => toggleSection('list-stacks-desktop', stackDesktop.querySelector('.filter-arrow'));
+cateDesktop.onclick = () => toggleSection('list-category-desktop', cateDesktop.querySelector('.filter-arrow'));
 
 stack.onclick = () => {
     stack.classList.toggle('sort-active');
@@ -66,8 +89,10 @@ function applyFilters() {
 }
 
 function addFilters() {
-    const stackdiv =  document.getElementById('list-stacks');
+    const stackdiv = document.getElementById('list-stacks');
     const catediv = document.getElementById('list-category');
+    const stackdivD = document.getElementById('list-stacks-desktop');
+    const catedivD = document.getElementById('list-category-desktop');
 
     let stacklist = [];
     let catelist = [];
@@ -75,22 +100,45 @@ function addFilters() {
     projects.forEach(p => {
         p.stacks.forEach(s => {
             if(!stacklist.includes(s)) {
-                stacklist.push(s);
-                var stack = document.createElement('span');
-                stack.setAttribute('class', 'stack');
-                stack.classList.add('uncheck');
-                stack.innerHTML = s;
-                stackdiv.append(stack);
+                stacklist.push(s); 
+                // mobile
+                const sm = document.createElement('span');
+                sm.setAttribute('class', 'stack uncheck');
+                sm.innerHTML = s;
+                stackdiv.append(sm);
+                // desktop
+                const sd = document.createElement('span');
+                sd.setAttribute('class', 'stack uncheck');
+                sd.innerHTML = s;
+                stackdivD.append(sd);
             }
         });
 
         if(!catelist.includes(p.category)) {
             catelist.push(p.category);
-            var category = document.createElement('span');
-            category.setAttribute('class', 'category');
-            category.classList.add('uncheck');
-            category.innerHTML = p.category;
-            catediv.append(category);
+            // mobile
+            const cm = document.createElement('span');
+            cm.setAttribute('class', 'category uncheck');
+            cm.innerHTML = p.category;
+            catediv.append(cm);
+            // desktop
+            const cd = document.createElement('span');
+            cd.setAttribute('class', 'category uncheck');
+            cd.innerHTML = p.category;
+            catedivD.append(cd);
+        }
+    });
+}
+
+function toggleSection(listId, arrow) {
+    document.getElementById(listId).classList.toggle('collapsed');
+    arrow.classList.toggle('collapsed');
+}
+
+function syncFilters(type, value, source) {
+    document.querySelectorAll(`.${type}`).forEach(item => {
+        if (item.textContent.trim() === value && item !== source) {
+            item.classList.toggle('uncheck');
         }
     });
 }
@@ -124,14 +172,18 @@ function renderProjects(pjs) {
         title.innerHTML = p.title;
         expbox.append(title);
 
+        const div = document.createElement('div');
+        div.setAttribute('class', 'infos');
+        expbox.append(div);
+
         const desc = document.createElement('span');
         desc.setAttribute('class', 'desc');
         desc.innerHTML = p.description;
-        expbox.append(desc);
+        div.append(desc);
 
         const info = document.createElement('div');
         info.setAttribute('class', 'info');
-        expbox.append(info);
+        div.append(info);
 
         const stacks = document.createElement('div');
         stacks.setAttribute('class', 'stacks');
